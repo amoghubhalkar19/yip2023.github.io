@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Login Form | CodingLab</title> 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+     <title>Login Now</title> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body{
 .container{
   max-width: 440px;
   padding: 0 20px;
-  margin: 170px auto;
+  margin: 70px auto;
 }
 .wrapper{
   width: 100%;
@@ -115,17 +115,23 @@ form .button input:hover{
 form .signup-link a:hover{
   text-decoration: underline;
 }
-  </style>
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
   <body>
+    <div class="login_page" style="display:flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="heading">
+        <br><br><br><br>
+       <h2 style="font-weight: bold; color:white;"> YOUNG INNOVATOR'S PROGRAM</h2>
+    </div>
     <div class="container">
       <div class="wrapper">
+
         <div class="title"><span>Login Form</span></div>
         <form action="#">
           <div class="row">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Email or Phone" required>
+            <input type="text" placeholder="Team Name" required>
           </div>
           <div class="row">
             <i class="fas fa-lock"></i>
@@ -135,10 +141,11 @@ form .signup-link a:hover{
           <div class="row button">
             <input type="submit" value="Login">
           </div>
-          <div class="signup-link">Not a member? <a href="./form.html">Signup now</a></div>
+          <div class="signup-link">Don't have an account? <a href="./form.html">Register Here</a></div>
         </form>
       </div>
     </div>
+</div>
 
   </body>
 </html>

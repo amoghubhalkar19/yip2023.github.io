@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="form.js"></script>
+<!-- <script src="form.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <style>
-    /*custom font*/
+    <title>Register</title>
+    <style>
+      /*custom font*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /*basic reset*/
@@ -18,8 +18,7 @@ html {
 	/*Image only BG fallback*/
 	
 	/*background = gradient + image pattern combo*/
-	background: 
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+	background: #1abc9c;
 }
 
 body {
@@ -167,9 +166,9 @@ body {
 	color: white;
 }
 
-   </style>
+    </style>
   </head>
-  <body>
+  <body style="display:flex;flex-direction: column; justify-content: center; align-items: center;">
     <!-- multistep form -->
     <!-- multistep form -->
     <form id="msform">
@@ -189,14 +188,14 @@ body {
     <input required type="password" name="pass" placeholder="Password" />
     <input required type="password" name="cpass" placeholder="Confirm Password" />
    
-                        <select name="" class="dropopt">
-                            <option value="" disabled selected>Choose your problem statement</option>
-                            <option value="Male">Food Security and Precision Agriculture</option>
-                            <option value="Female">Renewable energy and Environmental Sustainablity</option>
-                            <option value="Genderqueer/Non-Binary">Robotics, Automation and application of AI</option>
-                            <option value="Prefer not to disclose">Advanced Transportation and Battery Management</option>
-                            <option value="Prefer not to disclose">Advanced Transportation and Battery Management</option>
-                            <option value="Prefer not to disclose">Advanced Transportation and Battery Management</option>
+                        <select name="" required class="dropopt">
+                            <option value="" disabled selected>Choose your Problem Statement</option>
+                            <option value="Male">Advanced recycling and waste management system</option>
+                            <option value="Female">Smart cities and applications for rural India</option>
+                            <option value="Genderqueer/Non-Binary">Innovation in the realms of food security, healthcare and medicine</option>
+                            <option value="Prefer not to disclose">Metaverse and its applications</option>
+                            <option value="Prefer not to disclose">Sustainable growth, climate change and energy solutions</option>
+                            <option value="Prefer not to disclose">Space technology and application</option>
                         </select>
     <input type="button" name="next" class="next action-button" value="Next" />
     
@@ -204,19 +203,19 @@ body {
   <fieldset>
     <h2 class="fs-title">Principal details</h2>
     <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
-    <input type="text" name="twitter" placeholder="Principal name" />
-    <input type="text" name="facebook" placeholder="Principal contact number" />
-    <input type="text" name="gplus" placeholder="Principal Gmail ID" />
+    <input type="text" required name="twitter" placeholder="Principal's name" />
+    <input type="text" required name="facebook" placeholder="Principal's contact number" />
+    <input type="text" required name="gplus" placeholder="Principal's Gmail ID" />
   
  
     <h2 class="fs-title">Mentor Details</h2>
     <!-- <h3 class="fs-subtitle">We will never sell it</h3> -->
-    <input type="text" name="fname" placeholder="Mentor's Name" />
-    <input type="text" name="lname" placeholder="Mentor's Number" />
-    <input type="text" name="phone" placeholder="Mentor's Gmail ID" />
+    <input type="text" required name="fname" placeholder="Mentor's Name" />
+    <input type="text" required name="lname" placeholder="Mentor's contact number" />
+    <input type="text" required name="phone" placeholder="Mentor's Gmail ID" />
     <h2 class="fs-title">NO. of students</h2>
     <select name="" class="dropopt">
-      <option value="" disabled selected>No. of students</option>
+      <option value="" required disabled selected>No. of students</option>
       <option value="Prefer not to disclose">2</option>
       <option value="Prefer not to disclose">3</option>
   </select>
@@ -235,11 +234,11 @@ body {
    
         <h2 class="fs-title">Student 1 Details</h2>
         <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
-        <input type="text" name="twitter" placeholder="Student's name" />
-        <input type="text" name="facebook" placeholder="Student's contact number" />
-        <input type="text" name="gplus" placeholder="Student's Gmail ID" />
-        <input type="text" name="facebook" placeholder="DOB" />
-        <input type="text" name="gplus" placeholder="Class" />
+        <input type="text" required name="twitter" placeholder="Student's name" />
+        <input type="text" required name="facebook" placeholder="Student's contact number" />
+        <input type="text" required name="gplus" placeholder="Student's Gmail ID" />
+        <input type="text" required name="facebook" placeholder="DOB" />
+        <input type="text" required name="gplus" placeholder="Class" />
         <select name="" class="dropopt">
           <option value="" disabled selected>Gender</option>
           <option value="Prefer not to disclose">Male</option>
@@ -250,11 +249,11 @@ body {
 <div class="student student2">
   <h2 class="fs-title">Student 2 Details</h2>
   <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
-  <input type="text" name="twitter" placeholder="Student's name" />
-  <input type="text" name="facebook" placeholder="Student's contact number" />
-  <input type="text" name="gplus" placeholder="Student's Gmail ID" />
-  <input type="text" name="facebook" placeholder="DOB" />
-  <input type="text" name="gplus" placeholder="Class" />
+  <input type="text" required name="twitter" placeholder="Student's name" />
+  <input type="text" required name="facebook" placeholder="Student's contact number" />
+  <input type="text" required name="gplus" placeholder="Student's Gmail ID" />
+  <input type="text" required name="facebook" placeholder="DOB" />
+  <input type="text" required name="gplus" placeholder="Class" />
   <select name="" class="dropopt">
     <option value="" disabled selected>Gender</option>
     <option value="Prefer not to disclose">Male</option>
@@ -290,13 +289,11 @@ body {
   <a href="#" class="submit action-button" target="_top">Submit</a>
 
   </fieldset>
+ 
 
   
 </form>  
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
-<!-- <script src="form.js"></script> -->
+<div class="login-link">Already have an account?<a href="./login.html" >Login Here</a></div>
 <script>
   $(document).ready(function() {
     var current_fs, next_fs, previous_fs; // fieldsets
@@ -377,4 +374,8 @@ body {
 });
 
 </script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+<script src="form.js"></script>
 </html>

@@ -1,311 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Themes</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Montserrat:wght@500&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@300&display=swap");
 
-      @keyframes content {
-        from {
-          display: none;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Themes</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Montserrat:wght@500&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@300&display=swap");
 
-        to {
-          display: block;
-        }
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
-      }
-
-      body {
-        width: 100%;
-        overflow: scroll;
-      }
-
-      section.home {
-        background-color: rgba(67, 223, 213);
-        color: white;
-        padding: 50px;
-        height: 102vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-      }
-
-      section.home .content123 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .home:before {
-        z-index: 777;
-        content: "";
-        position: absolute;
-        background: rgba(15, 32, 62, 0.3);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-      }
-
-      section.home h1 {
-        animation: content 1s;
-        font-size: 4rem;
-        z-index: 100;
-        position: relative;
-      }
-
-      section.home p {
-        animation: content 1s;
-        font-size: 1.5rem;
-        margin-top: 2%;
-        position: relative;
-        display: flex;
-      }
-
-      section.home .content {
-        z-index: 888;
-        color: #fff;
-        width: 70%;
-        margin-top: 50px;
+    @keyframes content {
+      from {
         display: none;
       }
 
-      section.home .active {
+      to {
         display: block;
-        animation: content;
-        transition: 0.8s ease-in;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+      width: 100%;
+      overflow: scroll;
+    }
+
+    section.home {
+      background-color: rgba(67, 223, 213);
+      color: white;
+      padding: 50px;
+      height: 102vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    section.home .content123 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home:before {
+      z-index: 777;
+      content: "";
+      position: absolute;
+      background: rgba(15, 32, 62, 0.3);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    section.home h1 {
+      animation: content 1s;
+      font-size: 4rem;
+      z-index: 100;
+      position: relative;
+    }
+
+    section.home p {
+      animation: content 1s;
+      font-size: 1.5rem;
+      margin-top: 2%;
+      position: relative;
+      display: flex;
+    }
+
+    section.home .content {
+      z-index: 888;
+      color: #fff;
+      width: 70%;
+      margin-top: 50px;
+      display: none;
+    }
+
+    section.home .active {
+      display: block;
+      animation: content;
+      transition: 0.8s ease-in;
+    }
+
+    section.home img {
+      z-index: 000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 105%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+
+    .slider-navigation {
+      z-index: 888;
+      position: relative;
+      display: flex;
+      justify-content: cnte;
+      align-items: center;
+      transform: translateY(80px);
+      margin-bottom: 12px;
+      height: min-content;
+      bottom: 2.5rem;
+    }
+
+    .slider-navigation .nav-btn {
+      width: 10px;
+      height: 10px;
+      position: relative;
+      bottom: 10px !important;
+      background: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+      transition: 0.3s ease;
+    }
+
+    .slider-navigation .nav-btn.active {
+      background: rgb(128, 0, 98);
+    }
+
+    .slider-navigation .nav-btn:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .slider-navigation .nav-btn:hover {
+      transform: scale(1.2);
+    }
+
+    .img-slide {
+      position: absolute;
+      width: 100%;
+      clip-path: circle(0% at 0 50%);
+    }
+
+    .img-slide.active {
+      clip-path: circle(150% at 0 50%);
+      transition: 1.5s ease;
+      transition-property: clip-path;
+    }
+
+    div.content123 {
+      height: 90%;
+    }
+
+    @media screen and (max-width: 810px) {
+      h1 {
+        font-size: 32px !important;
+      }
+
+      p {
+        font-size: 15px !important;
+      }
+
+      section.home {
+        padding: 0px !important;
+        margin: 0 !important;
       }
 
       section.home img {
-        z-index: 000;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 105%;
-        object-fit: cover;
-        opacity: 0.8;
+        height: 115%;
       }
 
-      .slider-navigation {
-        z-index: 888;
-        position: relative;
-        display: flex;
-        justify-content: cnte;
-        align-items: center;
-        transform: translateY(80px);
-        margin-bottom: 12px;
-        height: min-content;
-        bottom: 2.5rem;
+      .home:before {
+        height: 115%;
       }
+    }
+  </style>
+</head>
 
-      .slider-navigation .nav-btn {
-        width: 10px;
-        height: 10px;
-        position: relative;
-        bottom: 10px !important;
-        background: #fff;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-        transition: 0.3s ease;
-      }
+<body>
+  <section class="home">
+    <div class="content123">
+      <img src="./assets/1.jpg" alt="" class="img-slide active" />
+      <img src="./assets/2.jpg" alt="" class="img-slide" />
+      <img src="./assets/3.jpg" alt="" class="img-slide" />
+      <img src="./assets/4.jpg" alt="" class="img-slide" />
+      <img src="./assets/5.jpg" alt="" class="img-slide" />
+      <img src="./assets/6.jpg" alt="" class="img-slide" />
+      <div class="content active">
+        <h1>
+          Advanced recycling and<br />
+          waste management system
+        </h1>
+        <p>
+          The concept of 'Advanced Recycling and Waste Management' involves the separation, recovery, and reuse of
+          components from solid waste that retain economic value, effectively turning waste into wealth.
 
-      .slider-navigation .nav-btn.active {
-        background: rgb(128, 0, 98);
-      }
-
-      .slider-navigation .nav-btn:not(:last-child) {
-        margin-right: 20px;
-      }
-
-      .slider-navigation .nav-btn:hover {
-        transform: scale(1.2);
-      }
-
-      .img-slide {
-        position: absolute;
-        width: 100%;
-        clip-path: circle(0% at 0 50%);
-      }
-
-      .img-slide.active {
-        clip-path: circle(150% at 0 50%);
-        transition: 1.5s ease;
-        transition-property: clip-path;
-      }
-
-      div.content123 {
-        height: 90%;
-      }
-      @media screen and (max-width: 810px) {
-        h1 {
-          font-size: 32px !important;
-        }
-
-        p {
-          font-size: 15px !important;
-        }
-
-        section.home {
-          padding: 0px !important;
-          margin: 0 !important;
-        }
-
-        section.home img {
-          height: 115%;
-        }
-
-        .home:before {
-          height: 115%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <section class="home">
-      <div class="content123">
-        <img src="./assets/1.jpg" alt="" class="img-slide active" />
-        <img src="./assets/2.jpg" alt="" class="img-slide" />
-        <img src="./assets/3.jpg" alt="" class="img-slide" />
-        <img src="./assets/4.jpg" alt="" class="img-slide" />
-        <img src="./assets/5.jpg" alt="" class="img-slide" />
-        <img src="./assets/6.jpg" alt="" class="img-slide" />
-        <div class="content active">
-          <h1>
-            Advanced recycling and<br />
-            waste management system
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            tempora, nihil eveniet voluptatibus dolorum enim soluta numquam?
-            Unde, non praesentium. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Sit vero pariatur enim reiciendis sapiente quis
-            repellendus excepturi dolorem sequi, quos adipisci fugiat aspernatur
-            debitis dignissimos eligendi exercitationem fugit voluptatum quia
-            hic vel laborum delectus rem eaque eius. Laudantium, numquam illo!
-          </p>
-        </div>
-        <div class="content">
-          <h1>
-            Smart cities and<br />
-            application for Rural India
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            tempora, nihil eveniet voluptatibus dolorum enim soluta numquam?
-            Unde, non praesentium. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Sit vero pariatur enim reiciendis sapiente quis
-            repellendus excepturi dolorem sequi, quos adipisci fugiat aspernatur
-            debitis dignissimos eligendi exercitationem fugit voluptatum quia
-            hic vel laborum delectus rem eaque eius. Laudantium, numquam illo!
-          </p>
-        </div>
-        <div class="content">
-          <h1>Innovation in Healthcare and <br />Medicine</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            tempora, nihil eveniet voluptatibus dolorum enim soluta numquam?
-            Unde, non praesentium. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Sit vero pariatur enim reiciendis sapiente quis
-            repellendus excepturi dolorem sequi, quos adipisci fugiat aspernatur
-            debitis dignissimos eligendi exercitationem fugit voluptatum quia
-            hic vel laborum delectus rem eaque eius. Laudantium, numquam illo!
-          </p>
-        </div>
-        <div class="content">
-          <h1>
-            Sustainable growth and <br />
-            Climate Change
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            tempora, nihil eveniet voluptatibus dolorum enim soluta numquam?
-            Unde, non praesentium. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Sit vero pariatur enim reiciendis sapiente quis
-            repellendus excepturi dolorem sequi, quos adipisci fugiat aspernatur
-            debitis dignissimos eligendi exercitationem fugit voluptatum quia
-            hic vel laborum delectus rem eaque eius. Laudantium, numquam illo!
-          </p>
-        </div>
-        <div class="content">
-          <h1>
-            Space technology and<br />
-            Application
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            tempora, nihil eveniet voluptatibus dolorum enim soluta numquam?
-            Unde, non praesentium. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Sit vero pariatur enim reiciendis sapiente quis
-            repellendus excepturi dolorem sequi, quos adipisci fugiat aspernatur
-            debitis dignissimos eligendi exercitationem fugit voluptatum quia
-            hic vel laborum delectus rem eaque eius. Laudantium, numquam illo!
-          </p>
-        </div>
-        <div class="content">
-          <h1>
-            Metaverse and <br />
-            its Application
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            tempora, nihil eveniet voluptatibus dolorum enim soluta numquam?
-            Unde, non praesentium. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Sit vero pariatur enim reiciendis sapiente quis
-            repellendus excepturi dolorem sequi, quos adipisci fugiat aspernatur
-            debitis dignissimos eligendi exercitationem fugit voluptatum quia
-            hic vel laborum delectus rem eaque eius. Laudantium, numquam illo!
-          </p>
-        </div>
+        </p>
       </div>
-      <div class="slider-navigation">
-        <div class="nav-btn active"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
+      <div class="content">
+        <h1>
+          Smart cities and<br />
+          application for Rural India
+        </h1>
+        <p>
+          IIT Kharagpur places significant emphasis on addressing the crucial need for rural area development.
+          Additionally, a smart city is defined as a municipality that leverages information and communication
+          technologies (ICT) to enhance operational efficiency, facilitate public information sharing, and enhance the
+          quality of government services and citizen well-being.
+        </p>
       </div>
-    </section>
-    <script>
-      const btns = document.querySelectorAll(".nav-btn");
-      const slides = document.querySelectorAll(".img-slide");
-      const contents = document.querySelectorAll(".content");
-      var sliderNav = function (manual) {
-        btns.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        slides.forEach((slide) => {
-          slide.classList.remove("active");
-        });
-        contents.forEach((content) => {
-          content.classList.remove("active");
-        });
-        btns[manual].classList.add("active");
-        slides[manual].classList.add("active");
-        contents[manual].classList.add("active");
-      };
-      btns.forEach((btn, i) => {
-        btn.addEventListener("click", () => {
-          sliderNav(i);
-        });
+      <div class="content">
+        <h1>Innovation in Healthcare and <br />Medicine</h1>
+        <p>
+          The overarching goal is to enhance treatment, diagnosis, education, outreach, prevention, and research. These
+          efforts are aligned with long-term objectives focused on improving quality, safety, outcomes, efficiency, and
+          cost-effectiveness.
+        </p>
+      </div>
+      <div class="content">
+        <h1>
+          Sustainable growth and <br />
+          Climate Change
+        </h1>
+        <p>
+          Aim on building a more sustainable global economy will help reduce the greenhouse gas emissions that cause
+          climate change.
+        </p>
+      </div>
+      <div class="content">
+        <h1>
+          Space technology and<br />
+          Application
+        </h1>
+        <p>
+          Weather forecasting, remote sensing, satellite navigation systems, satellite television, and some
+          long-distance communications systems.
+
+        </p>
+      </div>
+      <div class="content">
+        <h1>
+          Metaverse and <br />
+          its Application
+        </h1>
+        <p>
+          A hypothetical, immersive 3D environment where we can experience life in ways we would not be able to in the
+          physical world.
+        </p>
+      </div>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+  <script>
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".img-slide");
+    const contents = document.querySelectorAll(".content");
+    var sliderNav = function (manual) {
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
       });
-    </script>
-  </body>
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    };
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+  </script>
+</body>
+
 </html>
