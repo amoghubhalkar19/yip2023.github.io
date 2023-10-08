@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&family=Poppins:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<script
+src="https://kit.fontawesome.com/d2966f862e.js"
+crossorigin="anonymous"
+></script>    
+<link rel="stylesheet" href="./assets/jquery.flipster.min.css" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./assets/jquery.flipster.min.js"></script>
+<title>Young Innovator's Program 2023, IIT Kharagpur</title>
+<style>
+   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+   *{
+    font-family: "Montserrat";
+   }
+  /* Navbar */
+  .navbar {
+    background-color: #008374 !important;
+    padding: 0 80px;
+    height: 70px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-brand img {
+    height: 40px;
+    vertical-align: middle;
+  }
+  .offcanvas{
+      background-color: #008374;
+      color:#fff !important;
+  }
+  @media screen and (max-width:991px) {
+      .nav-link{
+          color:#fff !important;
+      }
+      .dropdown-menu, .dropdown-item{
+          background-color: inherit;
+          color:#fff !important;
+      }
+  }
+  @media screen and (max-width: 546px) {
+    .navbar {
+      background-color: #008374 !important;
+      padding: 0 20px;
+      height: 70px;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .nav-item {
+      white-space: nowrap;
+      padding: 10px 0 10px 18px;
+    }
+    .navbar a,
+    .navbar a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.6) !important;
+      white-space: nowrap;
+      transition: 0.3s;
+      position: relative;
+    }
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover > a {
+      color: #fff !important;
+    }
+  
+    .navbar a i,
+    .navbar a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+  
+    .nav-link:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0px;
+      left: 0;
+      background-color: #f85a40;
+      visibility: hidden;
+      width: 0px;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  
+    .navbar a:hover:before,
+    .nav-item:hover > .nav-link:before,
+    .navbar .active:before {
+      visibility: visible;
+      width: 100%;
+    }
+  
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover > a {
+      color: #fff;
+    }
+  
+    .navbar .dropdown ul {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: calc(100% + 30px);
+      margin: 0;
+      padding: 10px 0;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      transition: 0.3s;
+      border-radius: 4px;
+    }
+  
+    .navbar .dropdown ul li {
+      min-width: 200px;
+    }
+  
+    .navbar .dropdown ul a {
+      padding: 10px 20px;
+      font-size: 15px;
+      text-transform: none;
+      font-weight: 600;
+      color: #006a5d !important;
+    }
+  
+    .navbar .dropdown ul a i {
+      font-size: 12px;
+    }
+  
+    .navbar .dropdown ul a:hover,
+    .navbar .dropdown ul .active:hover,
+    .navbar .dropdown ul li:hover > a {
+      color: var(--color-secondary);
+    }
+  
+    .navbar .dropdown:hover > ul {
+      opacity: 1;
+      top: 100%;
+      visibility: visible;
+    }
+  
+    .navbar .dropdown .dropdown ul {
+      top: 0;
+      left: calc(100% - 30px);
+      visibility: hidden;
+    }
+  
+    .navbar .dropdown .dropdown:hover > ul {
+      opacity: 1;
+      top: 0;
+      left: 100%;
+      visibility: visible;
+    }
+  }
+  /* End of Navbar */
+  /* ---------------------------------- */
+  /* Home Section */
+  #home{
+    padding-top:70px;
+    min-height:100vh;
+    background-color: #008374;
+  }
+  .hero-row{
+    padding-top:100px;
+  }
+  .hero-text{
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    padding-top:2rem;
+  }
+  .hero-text>h2{
+      font-size: 3rem;
+    }
+  .hero-text>p{
+      font-size: 30px;
+    }
+  .login{
+    border:solid 0.3px transparent;
+    border-radius: 50px;
+    padding:0.8rem 2.8rem;
+    color:#fff;
+    background-color: rgb(6, 119, 106);
+    font-family:'Raleway',sans-serif;
+  }
+  .login:hover{
+    border-color:rgba(255, 255, 255, 0.6);
+  }
+  .barc-redirect{
+    margin-left:20px;
+    border:solid 0.3px transparent;
+    border-radius: 50px;
+    padding:0.8rem 2.8rem;
+    color:#fff;
+    background-color: rgb(6, 119, 106);
+    font-family:'Raleway',sans-serif;
+    text-decoration: none;
+  }
+  .barc-redirect:hover{
+    border-color:rgba(255, 255, 255, 0.6);
+  }
+  .barc-redirect i{
+    color:white;
+    font-size:smaller;
+    margin-left:10px;
+  }
+  @media screen and (min-width:992px) {
+    .hero-text{
+      padding-left:10rem;
+    }
+  }
+  @media screen and (max-width:991px) {
+    .hero-text>h2{
+      padding-top:2rem;
+      font-size: 2rem;
+    }
+    .hero-text>p{
+      font-size: 20px;
+    }
+    .login,.barc-redirect{
+      padding:0.4rem 2.2rem;
+      margin-bottom:30px;
+    }
+    
+  }
+  .contact-home{
+    text-align: left;
+    padding-top:50px;
+    color:#99CDC7;
+    font-family: 'Montserrat',sans-serif;
+   
+  }
+  .contact-home h4{
+    font-size:20px;
+  }
+  .contact-home h5{
+    font-size: 16px;
+  }
+  .carousel-inner{
+    border-radius: 50px !important;
+  }
+  .carousel-item img{
+    border-radius: 50px !important;
+    padding-right:30px !important;
+  }
+  @media screen and (max-width:991px) {
+    .carousel-item img{
+    padding-right:unset !important;
+  }
+  }
+  
+  /* About */
+  .section-header {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  
+  .section-header h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-header h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #008374;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .section-header p {
+    margin-bottom: 0;
+    /* font-size: 18px; */
+    color: #6f6f6f;
+  }
+  #about{
+    padding-top:60px;
+    min-height:70vh;
+  }
+  .about h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family:"Montserrat", sans-serif;
+  }
+  
+  
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding: 0 0 10px 30px;
+    position: relative;
+  }
+  
+  .about .content ul i {
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: 1px;
+    color: #008374;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* timeline */
+
+  #timeline {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat";
+  }
+  #timeline>.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: white;
+  }
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #008274;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .timeline-content .date {
+    width: 45%;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #1e1f22;
+    background-color: cyan;
+    border-radius: 1rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-2.85rem);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(0.95rem);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: gray;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .timeline-content .date {
+      position: absolute;
+      top: -35px;
+      color: #1e1f22;
+    }
+    .timeline ul li:hover::before {
+      background-color: aqua;
+    }
+  }
+
+  /* gallery */
+
+  #gallery {
+        margin: 0;
+        padding: 0;
+      }
+
+      .hero {
+        width: 100%;
+        height: 100vh;
+        /* background: rgb(28, 98, 103); */
+        background: linear-gradient(0deg, white, #19796d);
+        overflow: hidden;
+      }
+
+      .hero .carousel {
+        width: 350px;
+        margin: 100px auto 0;
+        overflow: visible;
+      }
+
+      .hero .carousel img {
+        -webkit-box-reflect: below 20px
+          linear-gradient(
+            0deg,
+            rgba(28, 98, 103, 0.326),
+            rgba(255, 0, 0, 0.048),
+            rgba(28, 98, 103, 0.008)
+          );
+      }
+
+      @media screen and (max-width: 910px) {
+        .hero .carousel img {
+          width: 300px;
+          height: 250px;
+        }
+
+        .hero {
+          height: 80vh;
+        }
+      }
+
+      @media screen and (max-width: 650px) {
+        .hero .carousel img {
+          width: 25f0px;
+          height: 200px;
+        }
+
+        .hero {
+          height: 70vh;
+        }
+      }
+
+      @media screen and (max-width: 525px) {
+        .hero .carousel img {
+          width: 250px;
+          height: 200px;
+        }
+
+        .hero {
+          height: 60vh;
+        }
+      }
+
+      @media screen and (max-width: 425px) {
+        .hero .carousel img {
+          width: 250px;
+          height: 200px;
+        }
+
+        .hero {
+          height: 60vh;
+        }
+      }
+    </style>
+    <style>
+      /*! jQuery.Flipster, v1.1.5 (built 2020-10-17) */
+      .flipster {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: visible;
+        position: relative;
+      }
+
+      .flipster:focus {
+        outline: none;
+      }
+
+      .flipster__container,
+      .flipster__item {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+      }
+
+      .flipster__container {
+        display: block;
+        white-space: nowrap;
+        word-spacing: -0.25em;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flipster__item {
+        display: inline-block;
+        white-space: normal;
+        word-spacing: normal;
+        vertical-align: bottom;
+      }
+
+      .flipster--click .flipster__item--past,
+      .flipster--click .flipster__item--future {
+        cursor: pointer;
+      }
+
+      .flipster__item img {
+        max-width: 100%;
+      }
+
+      .flipster__button {
+        position: absolute;
+        top: 50%;
+        display: block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: none;
+        border: none;
+        padding: 0;
+        z-index: 999;
+        cursor: pointer;
+        font-size: 15px;
+        opacity: 0.5;
+        -webkit-transition: opacity 500ms ease;
+        -o-transition: opacity 500ms ease;
+        transition: opacity 500ms ease;
+        margin: -1em 2em;
+      }
+
+      .flipster__button svg {
+        width: 2em;
+        stroke: currentColor;
+        fill: transparent;
+        stroke-width: 3;
+        stroke-linecap: round;
+      }
+
+      .flipster__button:hover,
+      .flipster__button:focus {
+        opacity: 1;
+      }
+
+      .flipster__button--prev {
+        left: 0;
+      }
+
+      .flipster__button--next {
+        right: 0;
+      }
+
+      .flipster__nav,
+      .flipster__nav__item {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .flipster__nav {
+        display: block;
+        margin: 0 0 4em;
+        text-align: center;
+        position: relative;
+      }
+
+      .flipster__nav__item {
+        display: inline-block;
+        margin: 0 0.25em;
+      }
+
+      .flipster__nav__link {
+        display: block;
+        color: inherit;
+        padding: 0.5em 1em;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: all 250ms ease-out;
+        -o-transition: all 250ms ease-out;
+        transition: all 250ms ease-out;
+        -webkit-transition-timing-function: cubic-bezier(
+          0.56,
+          0.12,
+          0.12,
+          0.98
+        );
+        -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+        transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+      }
+
+      .flipster__nav__link::after {
+        content: "";
+        display: block;
+        background: #232221;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        -webkit-transform: translateY(100%) translateY(-0.25em);
+        -ms-transform: translateY(100%) translateY(-0.25em);
+        transform: translateY(100%) translateY(-0.25em);
+        -webkit-transition: inherit;
+        -o-transition: inherit;
+        transition: inherit;
+      }
+
+      .flipster__nav__item--current > .flipster__nav__link,
+      .flipster__nav__link:hover,
+      .flipster__nav__link:focus {
+        color: #fff;
+      }
+
+      .flipster__nav__item--current > .flipster__nav__link::after,
+      .flipster__nav__link:hover::after,
+      .flipster__nav__link:focus::after {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+
+      .flipster__nav__child {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: -1px;
+        padding: 0.5em;
+        background: #4e4441;
+        z-index: 1;
+      }
+
+      .flipster__nav__child .flipster__nav__link {
+        color: #fff;
+      }
+
+      .flipster__nav__child .flipster__nav__link::after {
+        background: #fff;
+      }
+
+      .flipster__nav__child
+        .flipster__nav__item--current
+        > .flipster__nav__link,
+      .flipster__nav__child .flipster__nav__link:hover,
+      .flipster__nav__child .flipster__nav__link:focus {
+        color: #232221;
+      }
+
+      .flipster__nav__item--current .flipster__nav__child {
+        display: block;
+      }
+
+      .flipster--carousel .flipster__container,
+      .flipster--carousel .flipster__item,
+      .flipster--carousel .flipster__item__content {
+        -webkit-transition: all 350ms ease-in-out;
+        -o-transition: all 350ms ease-in-out;
+        transition: all 350ms ease-in-out;
+        -webkit-transition-timing-function: cubic-bezier(
+          0.56,
+          0.12,
+          0.12,
+          0.98
+        );
+        -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+        transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+      }
+
+      .flipster--carousel .flipster__item {
+        -webkit-perspective: 800px;
+        perspective: 800px;
+      }
+
+      .flipster--carousel .flipster__item--past,
+      .flipster--carousel .flipster__item--future {
+        opacity: 0;
+        -webkit-transition-delay: 115ms;
+        -o-transition-delay: 115ms;
+        transition-delay: 115ms;
+      }
+
+      .flipster--carousel .flipster__item--past-2,
+      .flipster--carousel .flipster__item--future-2 {
+        opacity: 0.6;
+        -webkit-transition-delay: 90ms;
+        -o-transition-delay: 90ms;
+        transition-delay: 90ms;
+      }
+
+      .flipster--carousel .flipster__item--past-1,
+      .flipster--carousel .flipster__item--future-1 {
+        opacity: 0.8;
+        -webkit-transition-delay: 60ms;
+        -o-transition-delay: 60ms;
+        transition-delay: 60ms;
+      }
+
+      .flipster--carousel .flipster__item--past .flipster__item__content {
+        -webkit-transform: translateX(100%) rotateY(-20deg) scale(0.5);
+        transform: translateX(100%) rotateY(-20deg) scale(0.5);
+      }
+
+      .flipster--carousel .flipster__item--past-2 .flipster__item__content {
+        -webkit-transform: translateX(25%) rotateY(40deg) scale(0.65);
+        transform: translateX(25%) rotateY(40deg) scale(0.65);
+      }
+
+      .flipster--carousel .flipster__item--past-1 .flipster__item__content {
+        -webkit-transform: rotateY(45deg) scale(0.8);
+        transform: rotateY(45deg) scale(0.8);
+      }
+
+      .flipster--carousel .flipster__item--future .flipster__item__content {
+        -webkit-transform: translateX(-100%) rotateY(20deg) scale(0.5);
+        transform: translateX(-100%) rotateY(20deg) scale(0.5);
+      }
+
+      .flipster--carousel .flipster__item--future-2 .flipster__item__content {
+        -webkit-transform: translateX(-25%) rotateY(-40deg) scale(0.65);
+        transform: translateX(-25%) rotateY(-40deg) scale(0.65);
+      }
+
+      .flipster--carousel .flipster__item--future-1 .flipster__item__content {
+        -webkit-transform: rotateY(-45deg) scale(0.8);
+        transform: rotateY(-45deg) scale(0.8);
+      }
+
+      .flipster--carousel.no-rotate
+        .flipster__item--past
+        .flipster__item__content {
+        -webkit-transform: translateX(175%) scale(0.5);
+        -ms-transform: translateX(175%) scale(0.5);
+        transform: translateX(175%) scale(0.5);
+      }
+
+      .flipster--carousel.no-rotate
+        .flipster__item--past-2
+        .flipster__item__content {
+        -webkit-transform: translateX(25%) scale(0.65);
+        -ms-transform: translateX(25%) scale(0.65);
+        transform: translateX(25%) scale(0.65);
+      }
+
+      .flipster--carousel.no-rotate
+        .flipster__item--past-1
+        .flipster__item__content {
+        -webkit-transform: translateX(0%) scale(0.8);
+        -ms-transform: translateX(0%) scale(0.8);
+        transform: translateX(0%) scale(0.8);
+      }
+
+      .flipster--carousel.no-rotate
+        .flipster__item--future
+        .flipster__item__content {
+        -webkit-transform: translateX(-175%) scale(0.5);
+        -ms-transform: translateX(-175%) scale(0.5);
+        transform: translateX(-175%) scale(0.5);
+      }
+
+      .flipster--carousel.no-rotate
+        .flipster__item--future-2
+        .flipster__item__content {
+        -webkit-transform: translateX(-25%) scale(0.65);
+        -ms-transform: translateX(-25%) scale(0.65);
+        transform: translateX(-25%) scale(0.65);
+      }
+
+      .flipster--carousel.no-rotate
+        .flipster__item--future-1
+        .flipster__item__content {
+        -webkit-transform: translateX(0%) scale(0.8);
+        -ms-transform: translateX(0%) scale(0.8);
+        transform: translateX(0%) scale(0.8);
+      }
+
+      .flipster--carousel .flipster__item--current .flipster__item__content {
+        -webkit-transform: translateX(0) rotateY(0deg) scale(1);
+        transform: translateX(0) rotateY(0deg) scale(1);
+        -webkit-transition-delay: 60ms;
+        -o-transition-delay: 60ms;
+        transition-delay: 60ms;
+      }
+
+      .flipster--coverflow .flipster__container,
+      .flipster--coverflow .flipster__item,
+      .flipster--coverflow .flipster__item__content {
+        -webkit-transition: all 350ms ease-in-out;
+        -o-transition: all 350ms ease-in-out;
+        transition: all 350ms ease-in-out;
+        -webkit-transition-timing-function: cubic-bezier(
+          0.56,
+          0.12,
+          0.12,
+          0.98
+        );
+        -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+        transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+      }
+
+      .flipster--coverflow .flipster__item {
+        -webkit-perspective: 800px;
+        perspective: 800px;
+      }
+
+      .flipster--coverflow .flipster__container {
+        padding-bottom: 5%;
+      }
+
+      .flipster--coverflow .flipster__item__content {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
+        -webkit-box-reflect: below 0 -webkit-gradient(linear, left bottom, left
+              top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
+      }
+
+      .flipster--coverflow .flipster__item__content img:only-child {
+        display: block;
+      }
+
+      .flipster--coverflow .flipster__item--past .flipster__item__content {
+        -webkit-transform-origin: 0% 50%;
+        -ms-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        -webkit-transform: scale(0.75) rotateY(55deg);
+        transform: scale(0.75) rotateY(55deg);
+      }
+
+      .flipster--coverflow .flipster__item--future .flipster__item__content {
+        -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-transform: scale(0.75) rotateY(-55deg);
+        transform: scale(0.75) rotateY(-55deg);
+      }
+
+      .flipster--coverflow .flip-current .flipster__item__content {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+
+      .flipster--flat .flipster__container,
+      .flipster--flat .flipster__item,
+      .flipster--flat .flipster__item__content {
+        -webkit-transition: all 400ms ease-in-out;
+        -o-transition: all 400ms ease-in-out;
+        transition: all 400ms ease-in-out;
+      }
+
+      .flipster--flat .flipster__item--past,
+      .flipster--flat .flipster__item--future {
+        opacity: 0.5;
+      }
+
+      .flipster--flat .flipster__item--past .flipster__item__content {
+        -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+        transform: scale(0.75);
+      }
+
+      .flipster--flat .flipster__item--future .flipster__item__content {
+        -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+        transform: scale(0.75);
+      }
+
+      .flipster--wheel {
+        overflow: hidden;
+      }
+
+      .flipster--wheel .flipster__container,
+      .flipster--wheel .flipster__item__content {
+        -webkit-transition: all 400ms ease-in-out;
+        -o-transition: all 400ms ease-in-out;
+        transition: all 400ms ease-in-out;
+        -webkit-transition-timing-function: cubic-bezier(
+          0.56,
+          0.12,
+          0.12,
+          0.98
+        );
+        -o-transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+        transition-timing-function: cubic-bezier(0.56, 0.12, 0.12, 0.98);
+      }
+
+      .flipster--wheel .flipster__container {
+        padding-bottom: 20%;
+      }
+
+      .flipster--wheel .flipster__item__content {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+      }
+
+      .flipster--wheel .flipster__item--past .flipster__item__content {
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+      }
+
+      .flipster--wheel .flipster__item--future .flipster__item__content {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+      }
+
+      .flipster--wheel .flipster__item__content img:only-child {
+        display: block;
+      }
+
+      .flipster--wheel .flipster__item--past .flipster__item__content {
+        opacity: 0;
+        -webkit-transform: rotateZ(-80deg) translate(-170%, 110%);
+        -ms-transform: rotate(-80deg) translate(-170%, 110%);
+        transform: rotateZ(-80deg) translate(-170%, 110%);
+      }
+
+      .flipster--wheel .flipster__item--future .flipster__item__content {
+        opacity: 0;
+        -webkit-transform: rotateZ(80deg) translate(170%, 110%);
+        -ms-transform: rotate(80deg) translate(170%, 110%);
+        transform: rotateZ(80deg) translate(170%, 110%);
+      }
+
+      .flipster--wheel .flipster__item--past-3 .flipster__item__content {
+        opacity: 1;
+        -webkit-transform: rotateZ(-60deg) translate(-70%, 75%);
+        -ms-transform: rotate(-60deg) translate(-70%, 75%);
+        transform: rotateZ(-60deg) translate(-70%, 75%);
+      }
+
+      .flipster--wheel .flipster__item--future-3 .flipster__item__content {
+        opacity: 1;
+        -webkit-transform: rotateZ(60deg) translate(70%, 75%);
+        -ms-transform: rotate(60deg) translate(70%, 75%);
+        transform: rotateZ(60deg) translate(70%, 75%);
+      }
+
+      .flipster--wheel .flipster__item--past-2 .flipster__item__content {
+        opacity: 1;
+        -webkit-transform: rotateZ(-40deg) translate(-17%, 30%);
+        -ms-transform: rotate(-40deg) translate(-17%, 30%);
+        transform: rotateZ(-40deg) translate(-17%, 30%);
+      }
+
+      .flipster--wheel .flipster__item--future-2 .flipster__item__content {
+        opacity: 1;
+        -webkit-transform: rotateZ(40deg) translate(17%, 30%);
+        -ms-transform: rotate(40deg) translate(17%, 30%);
+        transform: rotateZ(40deg) translate(17%, 30%);
+      }
+
+      .flipster--wheel .flipster__item--past-1 .flipster__item__content {
+        opacity: 1;
+        -webkit-transform: rotateZ(-20deg);
+        -ms-transform: rotate(-20deg);
+        transform: rotateZ(-20deg);
+      }
+
+      .flipster--wheel .flipster__item--future-1 .flipster__item__content {
+        opacity: 1;
+        -webkit-transform: rotateZ(20deg);
+        -ms-transform: rotate(20deg);
+        transform: rotateZ(20deg);
+      }
+
+      .flipster--wheel .flip-current .flipster__item__content {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+      }
+  
+  
+      </style>
+</head>
+<body>
+ 
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./assets/yiplogo.png" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="themes.html">Themes</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" target="_blank" href="prevyip.html">Previous YIP</a></li>
+                        <li><a class="dropdown-item" target="_blank" href="message.html">Message</a></li>
+                        <li><a class="dropdown-item" target="_blank" href="testimonial.html">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="#">Outreach</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Rule Book</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="winners.html">Winners</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li> -->
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- End of Navbar -->
+          <!-- ---------------------------------------------------------- -->
+          <!-- Home Section -->
+
+    <section id="home">
+    <div class="container-fluid text-center">
+      <div class="hero-row row d-flex justify-content-center align-items-center">
+        <div class="hero-text col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <h2 >Young Innovators Program<span><br /> 2023 </span></h2>
+          <p  style="font-weight:600;color: rgba(255, 255, 255, 0.6) !important;">IIT KHARAGPUR</p>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="login.html" class="login btn">Login</a>
+            <a target="_blank" rel="noreferrer" href="http://barc.iitkgp.ac.in/" class="barc-redirect d-flex align-items-center"><span>BARC</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="contact-home">
+            <h4>CONTACT</h4>
+            <h5>Aishwary Patel: +91 9630271203<br /> Bhumi Tayal: +91 7684067297</h5>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./assets/Img1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./assets/Img23.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./assets/Img4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+     
+    </div>
+   
+    </section>
+<!-- End of Home Section -->
+<!-- About Us section -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>About Us</h2>
+      <p>The Young Innovator's Program serves as a distinguished platform dedicated to fostering the scientific curiosity and problem-solving acumen of aspiring young minds. 
+
+      </p>
+    </div>
+
+    <div class="row gy-4">
+        <div class="content ps-0 ps-lg-5">
+          <p class="fst-italic">
+            This initiative, proudly launched by IIT Kharagpur, aims to recognize and celebrate students who exhibit exceptional creativity and a strong inclination toward scientific research.
+
+          </p>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> An exceptional opportunity to present their projects before a distinguished assemblage of esteemed researchers and honored guests.</li>
+            <li><i class="fa-solid fa-circle-check"></i> During a two-day visit to IIT Kharagpur, participants will have the distinct privilege of immersing themselves in a rich scientific milieu.</li>
+            <li><i class="fa-solid fa-circle-check"></i> We eagerly anticipate your active participation in YIP'23, where your intellectual brilliance is poised to shine.</li>
+          </ul>
+          <p>
+            <span style="font-weight:700">Eligibility Criteria:</span> This competition exclusively welcomes students currently enrolled in grades VIII through X, with the explicit objective of acknowledging and nurturing their creative potential.
+
+            We implore you not to allow your exceptional ideas to languish in dormancy. 
+          </p>
+
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+<!-- gallery ahead -->
+
+<section id="gallery">
+  <div class="hero">
+    <div class="carousel">
+      <ul>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+        <li><img src="./assets/img1 copy.jpg" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- timeline section ahead -->
+
+<section id="timeline">
+
+  <div class="container">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">26/11/2023 </h3>
+              <h1>Registration</h1>
+              <p>The principal needs to nominate a coordinating teacher for this program, who will be given a user ID and password for registration of the students. The students need to form a team of 2-3 members and submit their name and details to the coordinating teacher of the school.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">date </h3>
+              <h1>Round 1</h1>
+              <p>Round I Submission Starts<br>
+                The team will submit their abstract of the project ideas briefing the scientific proposal based on the chosen theme. The online submissions of the projects will be done by the coordinating teacher by using his/her user id and password on the portal. Round 1 results will be released on our website. All participants who make it to the next round will also receive the news via email. The selected students will proceed to round 2.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">date </h3>
+              <h1>Round 2 (Semifinal) @ IIT Kharagpur</h1>
+              <p>Top teams nationwide will be selected after the second round and they will be called to Indian Institute of Technology, Kharagpur to exhibit and demonstrate their models or prototype and charts which will be evaluated by professors of IIT Kharagpur. The selected team need to confirm their presence for a two-day event held in IIT Kharagpur.The registration fees for this round will be declared after the announcement of the results of the 1st round.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">date </h3>
+              <h1>Round 3 (Final Event) @ IIT Kharagpur</h1>
+              <p>The qualifying teams from the third round will be qualified for the winners round. In this round each team will be given an opportunity to demonstrate their ideas in the form of a presentation followed by a Q&A session.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  /*! jQuery.Flipster, v1.1.5 (built 2020-10-17) */
+
+  !(function (P, t, D) {
+    "use strict";
+    function L(n, i) {
+      var a = null;
+      return function () {
+        var t = this,
+          e = arguments;
+        null === a &&
+          (a = setTimeout(function () {
+            n.apply(t, e), (a = null);
+          }, i));
+      };
+    }
+    var r,
+      e =
+        ((r = {}),
+        function (t) {
+          if (r[t] !== D) return r[t];
+          var e = document.createElement("div").style,
+            n = t.charAt(0).toUpperCase() + t.slice(1),
+            i = (
+              t +
+              " " +
+              ["webkit", "moz", "ms", "o"].join(n + " ") +
+              n
+            ).split(" ");
+          for (var a in i) if (i[a] in e) return (r[t] = i[a]);
+          return (r[t] = !1);
+        }),
+      a = "http://www.w3.org/2000/svg",
+      E = P(t),
+      M = e("transform"),
+      i = {
+        itemContainer: "ul",
+        itemSelector: "li",
+        start: "center",
+        fadeIn: 400,
+        loop: !1,
+        autoplay: !1,
+        pauseOnHover: !0,
+        style: "coverflow",
+        spacing: -0.6,
+        click: !0,
+        keyboard: !0,
+        scrollwheel: !0,
+        touch: !0,
+        nav: !1,
+        buttons: !1,
+        buttonPrev: "Previous",
+        buttonNext: "Next",
+        onItemSwitch: !1,
+      },
+      T = {
+        main: "flipster",
+        active: "flipster--active",
+        container: "flipster__container",
+        nav: "flipster__nav",
+        navChild: "flipster__nav__child",
+        navItem: "flipster__nav__item",
+        navLink: "flipster__nav__link",
+        navCurrent: "flipster__nav__item--current",
+        navCategory: "flipster__nav__item--category",
+        navCategoryLink: "flipster__nav__link--category",
+        button: "flipster__button",
+        buttonPrev: "flipster__button--prev",
+        buttonNext: "flipster__button--next",
+        item: "flipster__item",
+        itemCurrent: "flipster__item--current",
+        itemPast: "flipster__item--past",
+        itemFuture: "flipster__item--future",
+        itemContent: "flipster__item__content",
+      },
+      X = new RegExp(
+        "\\b(" +
+          T.itemCurrent +
+          "|" +
+          T.itemPast +
+          "|" +
+          T.itemFuture +
+          ")(.*?)(\\s|$)",
+        "g"
+      ),
+      j = new RegExp("\\s\\s+", "g");
+    P.fn.flipster = function (e) {
+      if ("string" == typeof e) {
+        var n = Array.prototype.slice.call(arguments, 1);
+        return this.each(function () {
+          var t = P(this).data("methods");
+          return t[e] ? t[e].apply(this, n) : this;
+        });
+      }
+      var I = P.extend({}, i, e);
+      return this.each(function () {
+        var t,
+          f,
+          r,
+          n,
+          p,
+          s,
+          l,
+          c,
+          u,
+          v = P(this),
+          o = [],
+          h = 0,
+          d = !1,
+          e = !1;
+        function i(e) {
+          return (
+            (e = e || "next"),
+            P(
+              '<button class="' +
+                T.button +
+                " " +
+                ("next" === e ? T.buttonNext : T.buttonPrev) +
+                '" role="button" />'
+            )
+              .html(
+                ((n = "next" === (t = e) ? I.buttonNext : I.buttonPrev),
+                "custom" === I.buttons
+                  ? n
+                  : '<svg viewBox="0 0 13 20" xmlns="' +
+                    a +
+                    '" aria-labelledby="title"><title>' +
+                    n +
+                    '</title><polyline points="10,3 3,10 10,17"' +
+                    ("next" === t
+                      ? ' transform="rotate(180 6.5,10)"'
+                      : "") +
+                    "/></svg>")
+              )
+              .on("click", function (t) {
+                y(e), t.preventDefault();
+              })
+          );
+          var t, n;
+        }
+        function m() {
+          v.css("transition", ""),
+            f.css("transition", ""),
+            p.css("transition", "");
+        }
+        function g(a) {
+          var t, e;
+          a &&
+            (v.css("transition", "none"),
+            f.css("transition", "none"),
+            p.css("transition", "none")),
+            (r = f.width()),
+            f.height(
+              ((e = 0),
+              p.each(function () {
+                (t = P(this).height()), e < t && (e = t);
+              }),
+              e)
+            ),
+            r
+              ? (n && (clearInterval(n), (n = !1)),
+                p.each(function (t) {
+                  var e,
+                    n,
+                    i = P(this);
+                  i.attr("class", function (t, e) {
+                    return e && e.replace(X, "").replace(j, " ");
+                  }),
+                    (e = i.outerWidth()),
+                    0 !== I.spacing &&
+                      i.css("margin-right", e * I.spacing + "px"),
+                    (n = i.position().left),
+                    (o[t] = -1 * (n + e / 2 - r / 2)),
+                    t === p.length - 1 && (_(), a && setTimeout(m, 1));
+                }))
+              : (n =
+                  n ||
+                  setInterval(function () {
+                    g(a);
+                  }, 500));
+        }
+        function _() {
+          var e,
+            n,
+            i,
+            a = p.length;
+          p.each(function (t) {
+            (e = P(this)),
+              (n = " "),
+              (i =
+                t === h
+                  ? ((n += T.itemCurrent), a + 1)
+                  : t < h
+                  ? ((n += T.itemPast + " " + T.itemPast + "-" + (h - t)),
+                    a - (h - t))
+                  : ((n +=
+                      T.itemFuture + " " + T.itemFuture + "-" + (t - h)),
+                    a - (t - h))),
+              e.css("z-index", i).attr("class", function (t, e) {
+                return e && e.replace(X, "").replace(j, " ") + n;
+              });
+          }),
+            0 <= h &&
+              ((r && o[h] !== D) || g(!0),
+              M
+                ? f.css("transform", "translateX(" + o[h] + "px)")
+                : f.css({ left: o[h] + "px" })),
+            (function () {
+              if (I.nav) {
+                var t = s.data("flip-category");
+                c.removeClass(T.navCurrent),
+                  u
+                    .filter(function () {
+                      return (
+                        P(this).data("index") === h ||
+                        (t && P(this).data("category") === t)
+                      );
+                    })
+                    .parent()
+                    .addClass(T.navCurrent);
+              }
+            })();
+        }
+        function y(t) {
+          var e = h;
+          if (!(p.length <= 1))
+            return (
+              "prev" === t
+                ? 0 < h
+                  ? h--
+                  : I.loop && (h = p.length - 1)
+                : "next" === t
+                ? h < p.length - 1
+                  ? h++
+                  : I.loop && (h = 0)
+                : "number" == typeof t
+                ? (h = t)
+                : t !== D &&
+                  ((h = p.index(t)),
+                  I.loop &&
+                    e != h &&
+                    (e == p.length - 1 && h != p.length - 2 && (h = 0),
+                    0 == e && 1 != h && (h = p.length - 1))),
+              (s = p.eq(h)),
+              h !== e &&
+                I.onItemSwitch &&
+                I.onItemSwitch.call(v, p[h], p[e]),
+              _(),
+              v
+            );
+        }
+        function b(t) {
+          return (
+            (I.autoplay = t || I.autoplay),
+            clearInterval(d),
+            (d = setInterval(function () {
+              var t = h;
+              y("next"), t !== h || I.loop || clearInterval(d);
+            }, I.autoplay)),
+            v
+          );
+        }
+        function x() {
+          return clearInterval(d), (d = 0), v;
+        }
+        function w(t) {
+          return x(), I.autoplay && t && (d = -1), v;
+        }
+        function C() {
+          g(!0),
+            v
+              .hide()
+              .css("visibility", "")
+              .addClass(T.active)
+              .fadeIn(I.fadeIn);
+        }
+        function k() {
+          var o;
+          if (
+            ((f = v.find(I.itemContainer).addClass(T.container)),
+            !((p = f.find(I.itemSelector)).length <= 1))
+          )
+            return (
+              p.addClass(T.item).each(function () {
+                var t = P(this);
+                t.children("." + T.itemContent).length ||
+                  t.wrapInner('<div class="' + T.itemContent + '" />');
+              }),
+              I.click &&
+                p.on("click.flipster touchend.flipster", function (t) {
+                  e ||
+                    (P(this).hasClass(T.itemCurrent) || t.preventDefault(),
+                    y(this));
+                }),
+              I.buttons &&
+                1 < p.length &&
+                (v.find("." + T.button).remove(),
+                v.append(i("prev"), i("next"))),
+              (o = {}),
+              !I.nav ||
+                p.length <= 1 ||
+                (l && l.remove(),
+                (l = P('<ul class="' + T.nav + '" role="navigation" />')),
+                (u = P("")),
+                p.each(function (t) {
+                  var e = P(this),
+                    n = e.data("flip-category"),
+                    i = e.data("flip-title") || e.attr("title") || t,
+                    a = P(
+                      '<a href="#" class="' + T.navLink + '">' + i + "</a>"
+                    ).data("index", t);
+                  if (((u = u.add(a)), n)) {
+                    if (!o[n]) {
+                      var r = P(
+                          '<li class="' +
+                            T.navItem +
+                            " " +
+                            T.navCategory +
+                            '">'
+                        ),
+                        s = P(
+                          '<a href="#" class="' +
+                            T.navLink +
+                            " " +
+                            T.navCategoryLink +
+                            '" data-flip-category="' +
+                            n +
+                            '">' +
+                            n +
+                            "</a>"
+                        )
+                          .data("category", n)
+                          .data("index", t);
+                      (o[n] = P('<ul class="' + T.navChild + '" />')),
+                        (u = u.add(s)),
+                        r.append(s, o[n]).appendTo(l);
+                    }
+                    o[n].append(a);
+                  } else l.append(a);
+                  a.wrap('<li class="' + T.navItem + '">');
+                }),
+                l.on("click", "a", function (t) {
+                  var e = P(this).data("index");
+                  0 <= e && (y(e), t.preventDefault());
+                }),
+                "after" === I.nav ? v.append(l) : v.prepend(l),
+                (c = l.find("." + T.navItem))),
+              0 <= h && y(h),
+              v
+            );
+        }
+        (t = {
+          jump: y,
+          next: function () {
+            return y("next");
+          },
+          prev: function () {
+            return y("prev");
+          },
+          play: b,
+          stop: x,
+          pause: w,
+          index: k,
+        }),
+          v.data("methods", t),
+          v.hasClass(T.active) ||
+            (function () {
+              var t;
+              if ((v.css("visibility", "hidden"), k(), p.length <= 1))
+                v.css("visibility", "");
+              else {
+                (t =
+                  !!I.style &&
+                  "flipster--" + I.style.split(" ").join(" flipster--")),
+                  v.addClass(
+                    [
+                      T.main,
+                      M ? "flipster--transform" : " flipster--no-transform",
+                      t,
+                      I.click ? "flipster--click" : "",
+                    ].join(" ")
+                  ),
+                  I.start &&
+                    (h =
+                      "center" === I.start
+                        ? Math.floor(p.length / 2)
+                        : I.start),
+                  y(h);
+                var e,
+                  n,
+                  i,
+                  a,
+                  r,
+                  s,
+                  o,
+                  l,
+                  c = v.find("img");
+                if (c.length) {
+                  var u = 0;
+                  c.on("load", function () {
+                    ++u >= c.length && C();
+                  }),
+                    setTimeout(C, 750);
+                } else C();
+                E.on("resize.flipster", L(g, 400)),
+                  I.autoplay && b(),
+                  I.pauseOnHover &&
+                    f
+                      .on("mouseenter.flipster", function () {
+                        d ? w(!0) : x();
+                      })
+                      .on("mouseleave.flipster", function () {
+                        -1 === d && b();
+                      }),
+                  (e = v),
+                  I.keyboard &&
+                    ((e[0].tabIndex = 0),
+                    e.on(
+                      "keydown.flipster",
+                      L(function (t) {
+                        var e = t.which;
+                        (37 !== e && 39 !== e) ||
+                          (y(37 === e ? "prev" : "next"),
+                          t.preventDefault());
+                      }, 250)
+                    )),
+                  (function (t) {
+                    if (I.scrollwheel) {
+                      var e,
+                        n,
+                        i = !1,
+                        a = 0,
+                        r = 0,
+                        s = 0,
+                        o =
+                          /mozilla/.test(
+                            navigator.userAgent.toLowerCase()
+                          ) &&
+                          !/webkit/.test(navigator.userAgent.toLowerCase());
+                      t
+                        .on(
+                          "mousewheel.flipster wheel.flipster",
+                          function () {
+                            i = !0;
+                          }
+                        )
+                        .on(
+                          "mousewheel.flipster wheel.flipster",
+                          L(function (t) {
+                            clearTimeout(r),
+                              (r = setTimeout(function () {
+                                s = a = 0;
+                              }, 300)),
+                              (t = t.originalEvent),
+                              (s +=
+                                t.wheelDelta || -1 * (t.deltaY + t.deltaX)),
+                              (Math.abs(s) < 25 && !o) ||
+                                (a++,
+                                n !== (e = 0 < s ? "prev" : "next") &&
+                                  (a = 0),
+                                (n = e),
+                                (a < 6 || a % 3 == 0) && y(e),
+                                (s = 0));
+                          }, 50)
+                        ),
+                        t.on(
+                          "mousewheel.flipster wheel.flipster",
+                          function (t) {
+                            i && (t.preventDefault(), (i = !1));
+                          }
+                        );
+                    }
+                  })(f),
+                  (n = f),
+                  I.touch &&
+                    n.on({
+                      "touchstart.flipster": function (t) {
+                        (t = t.originalEvent),
+                          (i = t.touches
+                            ? t.touches[0].clientX
+                            : t.clientX),
+                          (a = t.touches
+                            ? t.touches[0].clientY
+                            : t.clientY);
+                      },
+                      "touchmove.flipster": function (t) {
+                        (t = t.originalEvent),
+                          (r = t.touches
+                            ? t.touches[0].clientX
+                            : t.clientX),
+                          (s = t.touches
+                            ? t.touches[0].clientY
+                            : t.clientY),
+                          (l = r - i),
+                          (o = s - a),
+                          30 < Math.abs(l) &&
+                            Math.abs(o) < 100 &&
+                            t.preventDefault();
+                      },
+                      "touchend.flipster touchcancel.flipster ":
+                        function () {
+                          (l = r - i),
+                            (o = s - a),
+                            30 < Math.abs(l) &&
+                              Math.abs(o) < 100 &&
+                              y(0 < l ? "prev" : "next");
+                        },
+                    });
+              }
+            })();
+      });
+    };
+  })(jQuery, window);
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      $(".carousel").flipster({
+        style: "carousel",
+        spacing: -0.3,
+      });
+    </script>
+  </body>
+</html>

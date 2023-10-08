@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials</title>
+    <!-- <link rel="stylesheet" href="testimonials.css" /> -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Montserrat:wght@500&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box !important;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-image: url('images/bg1.jpg');
+    background-size: cover;
+}
+
+.span {
+    color: #13139d;
+    font-weight: bolder;
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+}
+
+#container {
+    width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    position: relative;
+    /* background: #e2e2e2; */
+    overflow: hidden;
+}
+
+
+#holder {
+    max-width: 700px;
+    width: 98%;
+    min-height: 360px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#image {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    z-index: 200;
+    /* background: ; */
+    box-shadow: 0px 40px 120px 0px #08707f;
+    overflow: hidden;
+}
+
+#right {
+    width: 60%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+#text {
+    width: 67%;
+    height: 358px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1px 50px 0 26px;
+    z-index: 100;
+    background: rgba(255, 255, 255, .57);
+    box-shadow: 0px 5px 15px 0px #08707f;
+    margin: auto;
+}
+
+.testimonial-heading {
+    height: 50px;
+    text-align: center;
+    color: #08707f;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    outline-color: none;
+
+}
+
+nav {
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 -25px -70px;
+    z-index: 1000;
+    box-shadow: 0px 7px 24px 3px #08707f;
+    display: none;
+}
+
+#leftBtn {
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: rgba(255, 255, 255, .57);
+    background: #232323;
+    font-size: 25px;
+    line-height: 200%;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, .57);
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+#rightBtn {
+    width: 50%;
+    height: 100%;
+    float: right;
+    color: rgba(255, 255, 255, .57);
+    background: #232323;
+    font-size: 25px;
+    line-height: 200%;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .57);
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+#leftBtn:hover,
+#rightBtn:hover {
+    color: #fff;
+}
+
+#nav-cirlces {
+    width: 96px;
+    height: 20px;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.circle {
+    width: 20px;
+    height: 100%;
+    float: left;
+    border-radius: 100%;
+    border: 2px solid #232323;
+    margin: 0 6px;
+    cursor: pointer;
+    -webkit-transition: all .75s cubic-bezier(.86, .3, .07, 1);
+    -moz-transition: all .75s cubic-bezier(.86, .3, .07, 1);
+    -o-transition: all .75s cubic-bezier(.86, .3, .07, 1);
+    transition: all .75s cubic-bezier(.86, .3, .07, 1);
+}
+
+#centerText {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    margin-top: -100px;
+    padding: 10px 0;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centerText p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 174px;
+    left: 0;
+    right: -150px;
+    bottom: 0;
+    margin: auto;
+    font-size: 13px;
+    color: #232323;
+    padding: 0 50px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+    -moz-transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+    -o-transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+    transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+}
+
+p.quote.active {
+    right: 0;
+    opacity: 1;
+    background: transparent;
+}
+
+p.quote:nth-child(2) {
+    top: 200px;
+}
+
+.active-circle {
+    background: #232323;
+}
+
+#nav-cirlces .active {
+    background: #232323;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    background-position: center !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 400;
+    -webkit-transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+    -moz-transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+    -o-transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+    transition: all 2s cubic-bezier(.86, .3, .03, 1), opacity .7s cubic-bezier(.86, .3, .47, 1) .3s;
+}
+
+.img.active {
+    right: 0;
+    opacity: 1;
+    z-index: 500;
+}
+
+.jobs {
+    background: #fff url(./assets/keystone-international-school-hyderabad-schools-z8luh4t5lf.avif);
+}
+
+.zuck {
+    background: #fff url(./assets/kaanger\ valley\ academy.png);
+}
+
+.musk {
+    background: #fff url(./assets/the\ crossword\ school.jpg);
+}
+
+#bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*right: -100%;*/
+    opacity: 0;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.slide.active {
+    /*right: 0%;*/
+    opacity: 1;
+}
+
+/* 
+@media screen and (max-width:700px) {
+
+    #centerText p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    #holder {
+        max-width: 700px;
+        width: 100%;
+        min-height: 360px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: red;
+        margin: auto;
+    }
+
+    .img {
+        background-position: top center !important;
+    }
+
+    #image {
+        width: 220px;
+        height: 250px;
+        float: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -280px;
+        margin-left: -110px;
+    }
+
+    #right {
+        width: 100%;
+        height: 100%;
+        float: right;
+        position: relative;
+        background: blue;
+    }
+
+    #text {
+        width: 90%;
+        height: 320px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #nav-cirlces {
+        display: none;
+    }
+
+    #centerText {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 30%;
+        margin-top: -100px;
+        padding: 150px 0 !important;
+        overflow: visible;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    #image {
+        width: 200px;
+        height: 230px;
+        float: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -100px;
+    }
+
+    #text {
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #nav-cirlces {
+        display: none;
+    }
+
+    #centerText {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 30%;
+        margin-top: -100px;
+        padding: 120px 0 !important;
+        overflow: visible;
+    }
+
+} */
+.slide.active {
+    /*right: 0%;*/
+    opacity: 1;
+}
+
+
+/*.slide-1 {
+    background: #fff url('./images/vk\ tiwari\ sir.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-2 {
+    background: #fff url(./images/4_july2021.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-3 {
+    background: #fff url(https://raw.githubusercontent.com/hemantparashar/images/quote-cards/elonmusk-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+
+@media screen and (max-width:710px) {
+
+    #centerText p {
+        font-size: 13px;
+        padding-top: 75px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    /* #container {
+        /* overflow: visible; */
+    /* } */ 
+
+    #holder {
+        max-width: 700px;
+        width: 100%;
+        min-height: 360px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* background: red; */
+        margin: auto;
+    }
+
+    p.quote:nth-child(2) {
+        top: 275px;
+    }
+
+    .img {
+        background-position: top center !important;
+    }
+
+    #image {
+        width: 220px;
+        /* overflow: visible; */
+        height: 250px;
+        float: left;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        margin-top: -280px;
+        margin-left: -110px;
+    }
+
+    #right {
+        width: 100%;
+        height: 100%;
+        float: right;
+        position: relative;
+        /* background: blue; */
+    }
+
+    #text {
+        width: 75%;
+        height: 600px;
+        position: absolute;
+        top: 190px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #nav-cirlces {
+        display: none;
+    }
+
+    #centerText {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 30%;
+        margin-top: -100px;
+        padding: 150px 0 !important;
+        /* overflow: visible; */
+    }
+
+    p {
+        top: 290px;
+        left: -45px !important;
+    }
+
+}
+
+/* @media screen and (max-width:450px){
+#image{
+	width: 200px;
+	height:230px;
+	float: left;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -100px;
+}
+
+#text{
+	width: 100%;
+	height: 445px;
+	position: absolute;
+	top: 150px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#nav-cirlces{
+	display: none;
+}
+#centerText{
+	width: 100%;
+	height:200px;
+	position: absolute;
+	top: 30%;
+	margin-top:-100px;
+	padding: 120px 0!important;
+	overflow: visible;
+}
+
+} */
+
+@media screen and (max-width:512px) {
+    /* #container {
+        /* overflow: visible; */
+    /* } */ 
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #text {
+        height: 600px;
+        top: 135px;
+    }
+
+    p.quote:nth-child(2) {
+        top: 250px;
+    }
+
+    p {
+        top: 300px;
+        padding: 0 25px;
+    }
+
+    #image {
+        top: 60%;
+        /* overflow: visible; */
+    }
+
+    #centerText {
+        /* overflow: visible; */
+        top: 25%;
+    }
+}
+
+@media screen and (max-width:470px) {
+    /* #container #image #centerText {
+        /* overflow: visible; */
+    /* } */ 
+
+    p.quote:nth-child(2) {
+        top: 250px;
+    }
+
+    #text {
+        height: 725px;
+        top: 225px;
+    }
+
+    #centerText p {
+        padding-top: 130px;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <!-- <section id="testimonials-page">
+      <div id="testimonials">
+        <div class="testimonial-heading">
+          <h1>Testimonials</h1>
+        </div>
+        <div id="holder">
+          <div
+            id="image"
+            style="background: url('bg5.png') center/contain no-repeat"
+          >
+            <div class="img img-1 active"></div>
+            <div class="img img-2"></div>
+            <div class="img img-3"></div>
+          </div>
+          <div id="right"></div>
+          <div id="text">
+            <div id="centerText">
+              <div>
+                <p class="quote active say">
+                  <span class="span">Keystone School, Hyderabad</span><br />
+                  <span>Vijaylakshmi Sivalenka, Principal (YIP 2019)</span
+                  ><br />
+                  We are a project-based school and work on real-time problems
+                  which the children see at home or school or the neighborhood
+                  and try to devise sustainable solutions. For us, we need
+                  platforms like this where kids can showcase their work. I like
+                  the way the students of IIT Kharagpur have taken up the
+                  responsibility for organizing and conducting this program.
+                </p>
+              </div>
+              <div>
+                <p class="quote say">
+                  <span class="span">Kaanger Valley Academy, Raipur</span><br />
+                  <span>Neelam Dwivedi, Teacher (YIP 2018)</span><br />
+                  I accompanied Manveer Singh and Parineeti Bhura of our school
+                  to YIP. The team was awarded the first prize for their project
+                  on the anti-pollution mask that is herbal, homemade, and
+                  reusable. IIT Kharagpur always motivates students to do
+                  something good and new for the welfare of society and our
+                  environment. The hospitality and arrangement for the
+                  participants were perfect. The event was all about teamwork.
+                  We are really thankful to the organizers for changing the way
+                  of thinking and developing a scientific attitude in our
+                  students. Thank you for becoming our inspiration!
+                </p>
+              </div>
+              <div>
+                <p class="quote say">
+                  <span class="span">The Crossword School, Guntur</span><br />
+                  <span>Kesava Reddy MC, Teacher (YIP 2018)</span><br />
+                  We feel the YIP is a great level field for students from all
+                  corners of the country. We took back with us the ideas brought
+                  in by the other teams, inputs provided by the IIT professors,
+                  and the excellent attitude exhibited by the undergraduate
+                  students. In other words, our students and I returned with our
+                  perspective ‘reoriented’.
+                </p>
+              </div>
+            </div>
+            <nav class="local-nav">
+              <a class="prev guide"><i class="fa fa-arrow-left"></i></a>
+              <a class="next guide"><i class="fa fa-arrow-right"></i></a>
+            </nav>
+          </div>
+        </div>
+        <div id="bg">
+          <div class="slide slide-1 active"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+        </div>
+        <div id="nav-circles">
+          <div class="circle active" onclick="handleCircleClick(0)"></div>
+          <div class="circle" onclick="handleCircleClick(1)"></div>
+          <div class="circle" onclick="handleCircleClick(2)"></div>
+        </div>
+      </div>
+    </section> -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    ></script>
+
+    <div id="container">
+      <div class="testimonial-heading">
+        <h1>Testimonials</h1>
+      </div>
+      <div id="holder">
+        <div id="image">
+          <div class="img jobs"></div>
+          <div class="img zuck"></div>
+          <div class="img musk"></div>
+        </div>
+
+        <div id="right"></div>
+
+        <div id="text">
+          <div id="centerText">
+            <p class="quote">
+              <span class="span">Keystone School, Hyderabad</span><br />
+              <span>Vijaylakshmi Sivalenka, Principal (YIP 2019)</span><br />
+
+              We are a project-based school and work on real-time problems which
+              the children see at home or school or the neighborhood and try to
+              devise sustainable solutions. For us, we need platforms like this
+              where kids can showcase their work. I like the way the students of
+              IIT Kharagpur have taken up the responsibility for organizing and
+              conducting this program.
+            </p>
+            <p class="quote">
+              <span class="span">Kaanger Valley Academy, Raipur</span><br />
+              <span>Neelam Dwivedi, Teacher (YIP 2018)</span><br />
+
+              I accompanied Manveer Singh and Parineeti Bhura of our school to
+              YIP. The team was awarded the first prize for their project on the
+              anti-pollution mask that is herbal, homemade, and reusable. IIT
+              Kharagpur always motivates students to do something good and new
+              for the welfare of society and our environment. The hospitality
+              and arrangement for the participants were perfect. The event was
+              all about teamwork. We are really thankful to the organizers for
+              changing the way of thinking and developing a scientific attitude
+              in our students. Thank you for becoming our inspiration!
+            </p>
+            <p class="quote">
+              <span class="span">The Crossword School, Guntur</span><br />
+              <span>Kesava Reddy MC, Teacher (YIP 2018)</span><br />
+
+              We feel the YIP is a great level field for students from all
+              corners of the country. We took back with us the ideas brought in
+              by the other teams, inputs provided by the IIT professors, and the
+              excellent attitude exhibited by the undergraduate students. In
+              other words, our students and I returned with our perspective
+              ‘reoriented’.
+            </p>
+          </div>
+
+          <nav>
+            <a id="leftBtn" class="prev"><i class="fa fa-arrow-left"></i></a>
+            <a id="rightBtn" class="next"><i class="fa fa-arrow-right"></i></a>
+          </nav>
+        </div>
+      </div>
+
+      <div id="bg">
+        <div class="slide slide-1 active"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
+      </div>
+
+      <div id="nav-cirlces">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <!-- JavaScript for handling click events (add this to a separate .js file) -->
+    <script src="JS.js">
+      //   function handleCircleClick(index) {
+      //     // Implement your logic here for handling circle clicks
+      //   }
+    </script>
+    <script>
+      // // const [activeIndex, setActiveIndex] = useState(0);
+
+// // const handleCircleClick = (index) => {
+// //   clearInterval(animate);
+// //   setActiveIndex(index);
+// // };
+
+// // const handleArrowClick = (next) => {
+// //   clearInterval(animate);
+// //   setActiveIndex((prevIndex) => {
+// //     if (next) {
+// //       return (prevIndex + 1) % 3; // Replace 3 with the number of circles you have
+// //     } else {
+// //       return prevIndex > 0 ? prevIndex - 1 : 2; // Replace 2 with the number of circles you have - 1
+// //     }
+// //   });
+// // };
+
+// // let animate; // Declare the animate variable outside the useEffect
+
+// // useEffect(() => {
+// //   animate = setInterval(() => {
+// //     // Assign animate inside the useEffect
+// //     setActiveIndex((prevIndex) => (prevIndex + 1) % 3); // Replace 3 with the number of circles you have
+// //   }, 5000);
+
+// //   return () => {
+// //     clearInterval(animate);
+// //   };
+// // }, []);
+// // const circles = Array.from({ length: 3 }); // Replace 3 with the number of circles you have
+// let activeIndex = 0;
+// let animate;
+
+// function handleCircleClick(index) {
+//   clearInterval(animate);
+//   setActiveIndex(index);
+// }
+
+// function handleArrowClick(next) {
+//   clearInterval(animate);
+//   if (next) {
+//     activeIndex = (activeIndex + 1) % 3; // Replace 3 with the number of circles you have
+//   } else {
+//     activeIndex = activeIndex > 0 ? activeIndex - 1 : 2; // Replace 2 with the number of circles you have - 1
+//   }
+// }
+
+// function animateSlides() {
+//   animate = setInterval(() => {
+//     activeIndex = (activeIndex + 1) % 3; // Replace 3 with the number of circles you have
+//     // Add logic to update your UI here
+//   }, 5000);
+// }
+
+// // Initialize the animation
+// animateSlides();
+
+// const circles = Array.from({ length: 3 }); // Replace 3 with the number of circles you have
+
+// // Example usage:
+// // You would need to integrate this logic with your HTML and UI elements.
+// // When circles are clicked or arrows are clicked, call the respective functions.
+// // Update your UI to reflect the changes in `activeIndex`.
+$(window).load(function () {
+  $(".circle").first().addClass("active");
+  $("#bg .slide").first().addClass("active");
+  $("#image .img").first().addClass("active");
+  $(".quote").first().addClass("active");
+
+  var animate = setInterval(function () {
+    var $this = $(".circle"),
+      currentActiveBubble = $("#nav-cirlces").find(".active"),
+      position = $("#nav-cirlces").children().index(currentActiveBubble),
+      num = $(".circle").length;
+
+    if (position < num - 1) {
+      $(".active").removeClass("active").next().addClass("active");
+    } else {
+      $(".circle").removeClass("active").first().addClass("active");
+      $("#bg .slide").removeClass("active").first().addClass("active");
+      $("#image .img").removeClass("active").first().addClass("active");
+      $(".quote").removeClass("active").first().addClass("active");
+    }
+    position++;
+  }, 4500);
+
+  $(".circle").click(function () {
+    clearInterval(animate);
+
+    var $this = $(this),
+      $siblings = $this.parent().children(),
+      position = $siblings.index($this);
+
+    $(".circle").removeClass("active").eq(position).addClass("active");
+    $("#bg .slide").removeClass("active").eq(position).addClass("active");
+    $("#image .img").removeClass("active").eq(position).addClass("active");
+    $(".quote").removeClass("active").eq(position).addClass("active");
+  });
+
+  $("#rightBtn , #leftBtn").click(function () {
+    clearInterval(animate);
+
+    var $this = $(this),
+      currentActiveBubble = $("#nav-cirlces").find(".active"),
+      position = $("#nav-cirlces").children().index(currentActiveBubble),
+      num = $(".circle").length;
+
+    if ($this.hasClass("next")) {
+      if (position < num - 1) {
+        $(".active").removeClass("active").next().addClass("active");
+      } else {
+        $(".circle").removeClass("active").first().addClass("active");
+        $("#bg .slide").removeClass("active").first().addClass("active");
+        $("#image .img").removeClass("active").first().addClass("active");
+        $(".quote").removeClass("active").first().addClass("active");
+      }
+    } else {
+      if (position === 0) {
+        $(".circle").removeClass("active").last().addClass("active");
+        $("#bg .slide").removeClass("active").last().addClass("active");
+        $("#image .img").removeClass("active").last().addClass("active");
+        $(".quote").removeClass("active").last().addClass("active");
+      } else {
+        $(".active").removeClass("active").prev().addClass("active");
+      }
+    }
+  });
+});
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .top_prev {
+            height: 2vh;
+            width: 100%;
+            background-color: #008274;
+        }
+
+        .bot_prev {
+            height: 2vh;
+            width: 100%;
+            background-color: #008274;
+            margin-top: 2rem;
+        }
+
+        body {
+            font-family: "Montserrat";
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .row {
+            width: 100%;
+            max-width: 1170px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px 30px;
+            margin-top: 6rem;
+        }
+
+        .row .left {
+            overflow: hidden;
+        }
+
+        .row .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .row .right {
+            display: flex;
+            /* align-items: center; */
+        }
+
+        .content {
+            padding-left: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 15px;
+        }
+
+        a {
+            color: #008274;
+        }
+
+        @media (max-width: 991px) {
+            .row .right .content {
+                padding-left: 0px;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .row {
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="top_prev"></div>
+        <div class="row ">
+            <div class="left">
+                <div class="content">
+                    <h1>
+                        YIP 2022
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, est molestias. Numquam quas
+                        assumenda excepturi eum laboriosam laudantium dicta consequatur, quasi quos, recusandae tempora
+                        rerum amet iusto ipsa cum architecto!
+                    </p>
+                    <a href="./assets/yip19.pdf" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./assets/yip_22.jpeg">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">
+                <img src="./assets/Img1.jpg">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h1>
+                        YIP 2019
+                    </h1>
+                    <p>
+                        The third edition of YIP was a huge success, reaching out to 1200+ schools. The event saw the
+                        participation of 800+ teams and more than 2400 students with great enthusiasm and zeal. Teams
+                        from Singapore, UAE, Indonesia, Malaysia, and Saudi Arabia participated in the event in 2019,
+                        and some of them successfully made it to the semi-finals too and visited IIT Kharagpur.
+                    </p>
+                    <a href="./assets/yip19.pdf" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">
+                <div class="content">
+                    <h1>
+                        YIP 2018
+                    </h1>
+                    <p>
+                        The Young Innovators' Program of 2018 at the esteemed IIT KGP showcased an impressive outreach,
+                        reaching over 1000 schools across the country. The competition witnessed fierce competition,
+                        with two teams hailing from Singapore making it to the semifinals. Among the top 24 schools that
+                        had the privilege to visit the esteemed campus of IIT KGP, an experience that undoubtedly left a
+                        lasting impression on these young minds. Kaanger Valley Academy from Raipur emerged as the
+                        winners, showcasing their creativity and innovation. The Crossword School from Guntur and
+                        Tarapore School from Jamshedpur secured the runner-up positions, further highlighting the
+                        program's commitment to nurturing young minds and fostering innovation in the field of
+                        education.
+                    </p>
+                    <a href="./assets/yip18.pdf" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./assets/Img1.jpg">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">
+                <img src="./assets/Img1.jpg">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h1>
+                        YIP 2017
+                    </h1>
+                    <p>
+                        The Young Innovators' Program of 2017 IIT KGP boasted a nationwide reach, drawing the
+                        participation of schools from various corners of the country. As a pivotal component of the
+                        program's third round, a select group of 24 schools were given the unique opportunity to
+                        showcase their projects at the revered institution. This interaction extended beyond mere
+                        presentations, allowing the students to engage directly with distinguished professors from IIT
+                        KGP. Furthermore, the attendees were enriched by a comprehensive robotics workshop and an
+                        extensive campus tour, affording them firsthand exposure to the expansive academic expanse and
+                        state-of-the-art laboratories that distinguish IIT KGP as a leading educational institution in
+                        India.
+                    </p>
+                    <a href="./assets/yip17.pdf" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="bot_prev"></div>
+
+    </section>
+</body>
+
+</html>

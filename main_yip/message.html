@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Message </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .testimonial-section {
+      background-color: #ffffff;
+      padding: 80px 0;
+      min-height: 100vh;
+    }
+
+    .testi-img .img-box {
+      max-width: 360px;
+      margin: auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .testi-img .circle {
+      height: 360px;
+      width: 360px;
+      /* background-color: #fb9c9a; */
+      position: absolute;
+      border-radius: 50%;
+      left: 0;
+      bottom: 0;
+      transition: all 0.5s ease;
+    }
+
+    .testi-img .img-box-inner {
+      position: relative;
+      /* border-radius: 0 0 180px 180px; */
+      overflow: hidden;
+    }
+
+    .testi-img .img-box-inner img {
+      max-width: 310px;
+    }
+
+    .testimonial-section .carousel-inner {
+      margin-bottom: 20px;
+    }
+
+    .testimonial-section .carousel-control-prev {
+      margin-right: 10px;
+    }
+
+    .testimonial-section .carousel-control-next,
+    .testimonial-section .carousel-control-prev {
+      position: relative;
+      height: 35px;
+      width: 35px;
+      background-color: #008374;
+      display: inline-flex;
+      border-radius: 50%;
+    }
+
+    .testimonial-section .carousel-control-prev img,
+    .testimonial-section .carousel-control-next img {
+      width: 15px;
+    }
+
+    .testi-item h3,
+    .testi-item p {
+      font-size: 18px;
+    }
+
+    .testi-item h3 {
+      text-transform: capitalize;
+    }
+
+    /* Responsive */
+    @media(max-width:991px) {
+      .testi-img .img-box {
+        max-width: 300px;
+      }
+
+      .testi-img .circle {
+        height: 300px;
+        width: 300px;
+      }
+
+      .testi-img .img-box-inner {
+        /* border-radius: 0 0 150px 150px; */
+      }
+
+      .testi-img .img-box-inner img {
+        max-width: 230px;
+      }
+    }
+
+    @media(max-width:767px) {
+      .testi-img {
+        margin-bottom: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section class="testimonial-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 testi-img">
+          <div class="img-box">
+            <div class="circle"></div>
+            <div class="img-box-inner">
+              <img src="./assets/m1.jpg" alt="testi img">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="myCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item testi-item active" data-img="./assets/m1.jpg">
+                <p>“ Albert einstein once said that the "true sign of intelligence is not knowledge but imagination".
+                  One can go on learning facts and figures but unless one uses one’s imagination to see how these facts
+                  and figures add up to make the bigger picture one can never claim to have learnt anything. In fact we
+                  have to look beyond the classroom and try to use the knowledge that we have learnt to bring a
+                  difference in our lives. I am very happy to note that the Young innovators programme of IIT kharagpur
+                  is encouraging this habit of critical thinking among school children. Imagination comes naturally to
+                  children whose minds are often unfettered by the realities that adults have to deal with.YIP helps
+                  them to power their imagination to make changes in their own lives and those of others around
+                  them.Children are thus encouraged to think about the larger society and be more engaged creatures.This
+                  engagement is bound to make them more conscientious learners. As they grow up, they will reap the
+                  benefits of this learning by being better human beings and better citizens. ”</p>
+                <h3>Prof Virendra Kumar Tiwari - <span>Director, IIT Kharagpur</span></h3>
+              </div>
+              <div class="carousel-item testi-item" data-img="./assets/m2.jpg">
+                <p>“The Young Innovators Program of IIT Kharagpur ,in its three years of existence has been able to
+                  establish itself as a flagship event of this country for high school children .The event is a showcase
+                  of the enormous talent that the children of this country have in terms of their ability to think
+                  beyond classroom lessons and come up with innovative ideas to some relevant and pertinent problems.The
+                  projects and exhibits belie the age of these young minds.The desire to push the boundaries of their
+                  imagination and the urge to do something useful and relevant to society have left us mesmerized.I wish
+                  this event keeps growing as the years go by and spread its wings across the country and beyond. ”</p>
+                <h3>Prof. Jayanta Mukhopadhyay - <span>Dean Outreach, IIT Kharagpur</span></h3>
+              </div>
+              <div class="carousel-item testi-item" data-img="./assets/m3.jpg">
+                <p>“Our history in this planet is a story of innovations and inventions.Our story on this planet is
+                  about facing new challenges ,devising new solutions and moving on to the next challenge.On the whole,
+                  these innovations have brought enormous benefits to humankind, but sometimes they have also brought
+                  unit ended consequences.Today’s greatest challenges are the threats to the environment and human
+                  well-being.I am sure that we will find our way out of these as well. The Young Innovators of IIT
+                  Kharagpur is our way to spur this consciousness among the youngsters who are our future. ”</p>
+                <h3>Prof Debashish Chakravarty - <span>Associate Dean, Alumni Affairs and Branding, IIT Kharagpur</span>
+                </h3>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <img src="./assets/left-arrow.png" alt="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <img src="./assets/right-arrow.png" alt="prev">
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const myCarousel = document.getElementById('myCarousel')
+    myCarousel.addEventListener('slid.bs.carousel', function () {
+      const activeItem = this.querySelector(".active");
+      document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+      document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
+    })
+  </script>
+</body>
+
+</html>
