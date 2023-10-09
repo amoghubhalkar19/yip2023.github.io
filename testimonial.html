@@ -36,7 +36,7 @@ body {
     height: 100vh;
     position: relative;
     /* background: #e2e2e2; */
-    overflow: hidden;
+    overflow: visible;
 }
 
 
@@ -59,7 +59,7 @@ body {
     float: left;
     position: relative;
     z-index: 200;
-    /* background: ; */
+    background: ;
     box-shadow: 0px 40px 120px 0px #08707f;
     overflow: hidden;
 }
@@ -256,15 +256,15 @@ p.quote:nth-child(2) {
 }
 
 .jobs {
-    background: #fff url(./assets/keystone-international-school-hyderabad-schools-z8luh4t5lf.avif);
+    background: #fff url(images/keystone-international-school-hyderabad-schools-z8luh4t5lf.avif);
 }
 
 .zuck {
-    background: #fff url(./assets/kaanger\ valley\ academy.png);
+    background: #fff url(images/kaanger\ valley\ academy.png);
 }
 
 .musk {
-    background: #fff url(./assets/the\ crossword\ school.jpg);
+    background: #fff url(images/download.jpeg);
 }
 
 #bg {
@@ -433,7 +433,7 @@ p.quote:nth-child(2) {
 
     #centerText p {
         font-size: 13px;
-        padding-top: 75px;
+        padding-top: 20px;
     }
 
 }
@@ -441,15 +441,15 @@ p.quote:nth-child(2) {
 @media screen and (max-width:700px) {
     /* #container {
         /* overflow: visible; */
-    /* } */ 
+    /* }  */
 
     #holder {
         max-width: 700px;
-        width: 100%;
+        width: 90%;
         min-height: 360px;
         height: 100%;
         position: absolute;
-        top: 0;
+        top: 100px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -458,7 +458,7 @@ p.quote:nth-child(2) {
     }
 
     p.quote:nth-child(2) {
-        top: 275px;
+        top: 325px;
     }
 
     .img {
@@ -471,7 +471,7 @@ p.quote:nth-child(2) {
         height: 250px;
         float: left;
         position: absolute;
-        top: 65%;
+        top: 55%;
         left: 50%;
         margin-top: -280px;
         margin-left: -110px;
@@ -485,6 +485,10 @@ p.quote:nth-child(2) {
         /* background: blue; */
     }
 
+    h1 {
+        font-size: 50px;
+    }
+
     #text {
         width: 75%;
         height: 600px;
@@ -493,7 +497,8 @@ p.quote:nth-child(2) {
         left: 0;
         right: 0;
         bottom: 0;
-        margin: auto;
+        /* margin: auto; */
+        margin-bottom: 30px;
     }
 
     #nav-cirlces {
@@ -511,7 +516,7 @@ p.quote:nth-child(2) {
     }
 
     p {
-        top: 290px;
+        top: 300px;
         left: -45px !important;
     }
 
@@ -554,31 +559,65 @@ p.quote:nth-child(2) {
 
 } */
 
-@media screen and (max-width:512px) {
-    /* #container {
-        /* overflow: visible; */
-    /* } */ 
+@media screen and (max-width:670px) {
 
-    h1 {
-        font-size: 30px;
+    p.quote:nth-child(2) {
+        top: 325px;
     }
 
     #text {
-        height: 600px;
-        top: 135px;
+        height: 650px;
+        overflow: hidden;
+        top: 180px;
+    }
+
+    #holder {
+        top: 200px;
+    }
+
+    #image {
+        top: 48%;
+        /* overflow: visible; */
     }
 
     p.quote:nth-child(2) {
-        top: 250px;
+        top: 350px;
     }
 
     p {
         top: 300px;
         padding: 0 25px;
     }
+}
+
+@media screen and (max-width:512px) {
+   
+
+    #holder {
+        top: 180px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #text {
+        height: 650px;
+        overflow: hidden;
+        top: 180px;
+    }
+
+    p.quote:nth-child(2) {
+        top: 375px;
+    }
+
+    p {
+        top: 350px;
+        padding: 0 25px;
+    }
 
     #image {
-        top: 60%;
+        top: 48%;
         /* overflow: visible; */
     }
 
@@ -589,21 +628,79 @@ p.quote:nth-child(2) {
 }
 
 @media screen and (max-width:470px) {
-    /* #container #image #centerText {
-        /* overflow: visible; */
-    /* } */ 
+
+
+    #holder {
+        top: 250px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #text {
+        height: 700px;
+        overflow: hidden;
+        top: 180px;
+    }
 
     p.quote:nth-child(2) {
-        top: 250px;
+        top: 360px;
+    }
+
+    p {
+        top: 300px;
+        padding: 0 25px;
+    }
+
+    #image {
+        top: 40%;
+        /* overflow: visible; */
+        height: 220px;
+    }
+
+    #centerText {
+        /* overflow: visible; */
+        top: 25%;
+    }
+}
+@media screen and (max-width:420px) {
+   
+
+    #holder {
+        top: 300px;
+        width: 100%;
+
+    }
+
+    h1 {
+        font-size: 35px;
     }
 
     #text {
         height: 725px;
-        top: 225px;
+        overflow: hidden;
+        top: 180px;
     }
 
-    #centerText p {
-        padding-top: 130px;
+    p.quote:nth-child(2) {
+        top: 380px;
+    }
+
+    p {
+        top: 320px;
+        padding: 0 25px;
+    }
+
+    #image {
+        top: 37%;
+        /* overflow: visible; */
+        height: 220px;
+    }
+
+    #centerText {
+        /* overflow: visible; */
+        top: 25%;
     }
 }
     </style>
