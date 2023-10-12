@@ -205,6 +205,17 @@ crossorigin="anonymous"
   .login:hover{
     border-color:rgba(255, 255, 255, 0.6);
   }
+  .nav-item>.login{
+    border:solid 0.3px transparent;
+    border-radius: 50px;
+    padding:0.4rem 2.2rem;
+    color:#fff;
+    background-color: rgb(6, 119, 106);
+    font-family:'Raleway',sans-serif;
+  }
+  .nav-item>.login:hover{
+    border-color:rgba(255, 255, 255, 0.6);
+  }
   .barc-redirect{
     margin-left:20px;
     border:solid 0.3px transparent;
@@ -301,9 +312,10 @@ crossorigin="anonymous"
     color: #6f6f6f;
   }
   #about{
-    padding-top:60px;
+    padding-top:100px !important;
     min-height:70vh;
-    padding:10px;
+    padding-left:10px;
+    padding-bottom:50px;
   }
   .about h2 {
     font-weight: 700;
@@ -881,9 +893,9 @@ crossorigin="anonymous"
         -webkit-transform-origin: 50% 100%;
         -ms-transform-origin: 50% 100%;
         transform-origin: 50% 100%;
-        box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
+        /* box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
         -webkit-box-reflect: below 0 -webkit-gradient(linear, left bottom, left
-              top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
+              top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent)); */
       }
 
       .flipster--coverflow .flipster__item__content img:only-child {
@@ -1113,7 +1125,7 @@ crossorigin="anonymous"
           <h2 >Young Innovators Program<span><br /> 2023 </span></h2>
           <p  style="font-weight:600;color: rgba(255, 255, 255, 0.6) !important;">IIT KHARAGPUR</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="form.html" class="login btn">Register</a>
+            <a href="form.html" class="login btn" style="font-weight: bold;">Register</a>
             <a target="_blank" rel="noreferrer" href="http://barc.iitkgp.ac.in/" class="barc-redirect d-flex align-items-center"><span>BARC</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <div class="contact-home">
