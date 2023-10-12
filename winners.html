@@ -27,12 +27,24 @@
       place-items: center;
       /* background-color: #99CCCC; */
     }
-    .heading_win{
-      margin-top: 50px;
+
+    .heading_win {
+      /* margin-top: 50px; */
+      /* margin-top: ; */
       color: #02342f;
       font-weight: 700;
+      width: 100%;
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    h1{
+
+    .row>button {
+      width: 100%;
+    }
+
+    h1 {
       font-size: 3.5rem;
     }
 
@@ -69,10 +81,12 @@
     .content {
       padding-left: 20px;
     }
-    .content h1{
+
+    .content h1 {
       color: #008274;
     }
-    .content h2{
+
+    .content h2 {
       color: #019f8f;
     }
 
@@ -84,6 +98,15 @@
 
     a {
       color: #008274;
+    }
+
+    button {
+      height: 3rem;
+      width: 8rem;
+    }
+
+    button:hover a {
+      color: white;
     }
 
     @media (max-width: 991px) {
@@ -98,16 +121,143 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: #008274;
+    }
   </style>
 </head>
 
 <body>
   <section>
     <!-- <div class=" row"> -->
-      <h1 class="text-center heading_win">PREVIOUS YEAR'S WINNERS</h1>
+
+    <div class="row ">
+      <h1 class="text-center heading_win" style="margin-top: -20px;">PREVIOUS YEARS' WINNERS</h1>
+      <!-- <button type="button" class="btn btn-outline-info" onclick=""><a href="index.html" style="text-decoration: none;">Home</a></button> -->
+    </div>
+
+    <div class="yearr">
+      <h2 class="text-center heading_win" style="margin-top: 30px; font-size: 3rem;">2022</h2>
       <!-- <img src="yip_logo.png" alt=""> -->
+      <!-- </div> -->
+
+      <div class="row">
+        <div class="left">
+          <img src="./assets/gallery/win_22.jpg" style="height: 28rem;">
+        </div>
+        <div class="right ">
+          <div class="content">
+            <h1>
+              Winners
+            </h1>
+            <h2>Bhartiyam International School</h2>
+            <p>
+              The team created a robot vehicle to solve irrigationproblems. The robot is connected to a pipe for
+              watertransfer and directly waters the plant roots, leading to a230% increase in crop yield and conserving
+              up to 70% ofwater compared to flood irrigation.
+              The robot has an Arduino controller and variouselectronic components such as a high RPM motor, ablade, a
+              PIR sensor, a camera, Sprinkler Nozzles, motordrivers, and a Bluetooth HC05 module for remote control.The
+              vehicle moves towards the plants and irrigates themefficiently through innovative technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="left">
+          <img src="./assets/gallery/r1_22.jpg">
+        </div>
+        <div class="right">
+          <div class="content">
+            <h1>
+              1st Runner Up
+            </h1>
+            <h2>Ridge Valley School</h2>
+            <p>
+              This model allows for the generation of hydroelectricpower using both water and wastewater from
+              businesses.The model is entirely made from environmentally friendlymaterials. We must utilize our current
+              water supplieswisely because water shortage is on the rise. Pollution hasincreased as a result of our
+              reliance on fossil fuels. Theproject combines these ideas, so that resource overuseno longer threatens our
+              planet. It operates on the dynamomotor principle. Electricity is generated when waterrotates a turbine
+              connected to a dynamo motor. Afterthat, salt is used to purify the water in a storage tank atthe end of
+              the trough to eliminate contaminants.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="left">
+          <img src="./assets/gallery/r2_22.jpg">
+        </div>
+        <div class="right">
+          <div class="content">
+            <h1>
+              2nd Runner Up
+            </h1>
+            <h2>WWA Cossipore English School</h2>
+            <p>
+              Based on the theme of ‘Vertical Farming,’ this team hasmade a model for moisture control of the soil and
+              reusingthe excess water of pisciculture. This concept sees thesprawling crop farms of old condensed into
+              much smallerfactory-like sites where conditions can be optimized andyields significantly increased.
+              Facilities where crops canbe produced in an enclosed environment, where almostevery factor, ranging from
+              lighting and ambienttemperature to soil conditions and nutrients, are carefullycontrolled. The facility
+              uses extensive vertical racking tooptimize space, as compared to a conventional crop farmenabling it to be
+              located on a far smaller site and muchcloser to an established urban area.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <img src="./assets/gallery/r3_22.jpg">
+        </div>
+        <div class="right ">
+          <div class="content">
+            <h1>
+              3rd Runner up
+            </h1>
+            <h2>Sagar Public School, Gandhi Nagar, Bhopal</h2>
+            <p>
+              The team's model is based on utilizing heat energy viaLPG. This project aims to maximize the utility of
+              LPG. Theyemployed the physics concepts of conduction andconvention, which allow heat from one burner to
+              betransported to another while also allowing us to use theexcess heat to keep food warm or cook it over a
+              low flame.This model uses metal pipes, aluminum foil, metal sheets,and a gas stove, and it focuses on
+              solving real-lifeproblems at a minimal cost.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <img src="./assets/gallery/r4_22.jpg">
+        </div>
+        <div class="right ">
+          <div class="content">
+            <h1>
+              4th Runner up
+            </h1>
+            <h2>SANSKRITI THE GURUKUL<h2>
+                <p style="color: black;">
+                  The team's main objective in creating this project was tocategorize different waste types to recycle
+                  themefficiently. This is a helpful approach to problem-solvingbecause it harms us when recyclable and
+                  non-recyclablewaste is combined and burned in industries. Ecorage canseparate wastes such as metal,
+                  organic, and many moretypes with the many types of sensors it employs. Inductiveproximity sensors can
+                  detect metal trash without cominginto contact with the object. Although organic materialstypically
+                  retain moisture, soil moisture sensors monitor thewater content to check for them. When ultrasonic
+                  sensorspick up on something, it's usually either plastic or woodbecause the other two sensors can't
+                  pick it up.
+                </p>
+          </div>
+        </div>
+      </div>
+      <div class="line my-5"></div>
+    </div>
+    <h2 class="text-center heading_win" style="margin-top: 40px; font-size: 3rem;">2019</h2>
+    <!-- <img src="yip_logo.png" alt=""> -->
     <!-- </div> -->
-    
+
     <div class="row">
       <div class="left">
         <img src="./assets/w1.jpeg">
@@ -135,15 +285,16 @@
       <div class="right">
         <div class="content">
           <h1>
-              1st Runner Up
+            1st Runner Up
           </h1>
-          <h2>KIIT International School, Bhubaneshwar</h2>
+          <h2>Bharatiya Vidya Bhavans Public School, Hyderabad</h2>
           <p>
-            The team came up with a zero power consumption green device to dispense water by foot or bodyweight and
-            operated by a lever mechanism. The dispenser works with a foot/bodyweight operated board which depresses
-            when force is applied. An attached wire pulls the tap lever down, starting the water flow. On the release of
-            the weight, the board springs back and the lever tap spring restores the original position, stopping the
-            water flow. The user could use the water to take a shower, water plants or bathe a guide dog
+            The team made a much-needed attempt to reduce harmful emissions from vehicles entering the atmosphere
+            through
+            a cost-effective filter using coconut shells, corn cobs, and activated charcoal. All these materials are
+            kept inside a steel canister along with a metal wire mesh. The canister is fitted at the end of the smoke
+            pipe of the vehicle. Smoke enters the canister and its harmful contents are filtered once it passes through
+            the powdered corn cob and activated charcoal, thus emitting less polluted air into the atmosphere
           </p>
         </div>
       </div>
@@ -157,16 +308,157 @@
           <h1>
             2nd Runner Up
           </h1>
-          <h2>KIIT International School, Bhubaneshwar</h2>
+          <h2>Brahm Prakash D.A.V School, Hyderabad</h2>
           <p>
-            The team came up with a zero power consumption green device to dispense water by foot or bodyweight and
-            operated by a lever mechanism. The dispenser works with a foot/bodyweight operated board which depresses
-            when force is applied. An attached wire pulls the tap lever down, starting the water flow. On the release of
-            the weight, the board springs back and the lever tap spring restores the original position, stopping the
-            water flow. The user could use the water to take a shower, water plants or bathe a guide dog
+            They have developed ASTRON, a telescope for exploring space galaxies to carry out scientific research. The
+            team developed it by using 7 plane mirrors in a honeycomb structure to capture bright and high-quality
+            image. Each mirror is hexagonal in shape. The central mirror is fixed and the six side mirrors can be
+            adjusted. They proposed to superimpose all seven images of the object for brighter and clear quality images.
+            The telescope uses the concept of the working of a concave mirror and superimposing of images. It is
+            cost-effective and eco-friendly.
           </p>
         </div>
       </div>
+    </div>
+    <div class="line"></div>
+    </div>
+    <h2 class="text-center heading_win" style="margin-top: 40px; font-size: 3rem;">2018</h2>
+    <!-- <img src="yip_logo.png" alt=""> -->
+    <!-- </div> -->
+
+    <div class="row">
+      <div class="left">
+        <img src="./assets/gallery/w_18.jpg">
+      </div>
+      <div class="right ">
+        <div class="content">
+          <h1>
+            Winners
+          </h1>
+          <h2>Kaanger Valley Academy, Raipur</h2>
+          <p>
+            The winners of YIP 2018, team Anti-Pollution
+            Mask, came up with the most simple yet effective
+            idea for dealing with the problem of pollution.
+            Based on the cleansing properties of charcoal,
+            they devised an anti-pollution mask that is
+            reusable, cheap and can be easily prepared at
+            home. Most importantly, it can be used by people
+            from all walks of life and by all age groups, young
+            and old alike.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="left">
+        <img src="./assets/gallery/r1_18.jpg">
+      </div>
+      <div class="right">
+        <div class="content">
+          <h1>
+            1st Runner Up
+          </h1>
+          <h2>The Crossword School, Guntur</h2>
+          <p>
+            Team Pothole Warriors from Andhra Pradesh Guntur
+            came up with an alternative that would quickly and
+            efficiently fill potholes, which is currently a very
+            cumbersome process requiring manual labour.
+            This portable and easy-to-use model helps in
+            saving the roads and increases their durability.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="left">
+        <img src="./assets/gallery/r2_18.jpg">
+      </div>
+      <div class="right">
+        <div class="content">
+          <h1>
+            2nd Runner Up
+          </h1>
+          <h2>Tarapore School, Jamshedpur</h2>
+          <p>
+            The students came up with an effective solution to
+            reduce the problems faced in our country due to
+            improper waste management. Their Smart waste
+            management system makes garbage collection
+            more efficient, and the use of solar panels reduces
+            energy consumption. By reducing the manpower
+            required to handle garbage collection, and given
+            that it is aligned with the ‘Smart City’ and ‘Digital
+            India’ projects undertaken by our country, this
+            project surely is one for the future.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    </div>
+    <h2 class="text-center heading_win" style="margin-top: 40px; font-size: 3rem;">2017</h2>
+    <!-- <img src="yip_logo.png" alt=""> -->
+    <!-- </div> -->
+
+    <div class="row">
+      <div class="left">
+        <img src="./assets/gallery/w_17.jpg">
+      </div>
+      <div class="right ">
+        <div class="content">
+          <h1>
+            Winners
+          </h1>
+          <h2>Lakshmi School, Tamil Nadu</h2>
+          <p>
+            This team came all the way from Chennai and won the first edition of IIT KGP YIP. Their project was to
+            create a device that can detect oil spills in oceans and can successfully procure the crude oil. Oil spills
+            have become an important issue not only because of the water pollution but also for the loss of valuable
+            oil. The teams's design can recollect the oil from the spill and hence decontaminating the area.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="left">
+        <img src="./assets/gallery/r1_17.jpg">
+      </div>
+      <div class="right">
+        <div class="content">
+          <h1>
+            1st Runner Up
+          </h1>
+          <h2>Mother's Public School, Odisha</h2>
+          <p>
+            Intending to reduce road accidents the school came up with a project that uses an alcohol detector which
+            will detect if the driver is drunk or not and shut down the engine for the former. The system will also
+            incorporate a camera which can detect the drowsiness of driver byimage processing techniquesand shut-down
+            the engine accordingly.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="left">
+        <img src="./assets/gallery/r2_17.jpg">
+      </div>
+      <div class="right">
+        <div class="content">
+          <h1>
+            2nd Runner Up
+          </h1>
+          <h2>The Crossword School, Andhra Pradesh</h2>
+          <p>
+            The students coming all way from Andhra Pradesh came up with an idea to make improvisationsto fruit or
+            vegetable cart which will enable the shopkeeper to transit without harming the contents. Their idea could
+            serve a great purpose to vendors who often sufferloss due to spoilage of food due to heat during summers.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
     </div>
 
   </section>
